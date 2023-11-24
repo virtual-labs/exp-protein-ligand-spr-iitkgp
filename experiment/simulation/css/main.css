@@ -1,1 +1,25 @@
 /* You CSS goes in here */
+
+.card {
+    margin-bottom: 5px;
+}
+
+.img-container {
+    
+    display: inline-block;
+    position: relative;
+}
+
+.div-inline {
+
+    display: inline-block;
+}
+
+#setup{
+    position: relative;
+    top:1%;
+    left:5%;
+    width: 75%;
+
+
+}

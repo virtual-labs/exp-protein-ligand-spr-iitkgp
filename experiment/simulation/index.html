@@ -52,22 +52,89 @@
 								</tr>
 								<tr>
 									<td>Step 1</td>
-									<td></td>
+									<td><button id="step1" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " >Clean with MilliQ </button></td>
 									
 								</tr>
 								<tr>
 									<td>Step 2</td>
-									<td></td>
+									<td><button id="step2" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " >Dock the SPR sensor chip </button></td>
 									
 								</tr>
 								<tr>
 									<td>Step 3</td>
-									<td></td>
+									<td><button id="step3" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " >Prime with buffer
+									</button></td>
 									
 								</tr>
 								<tr>
 									<td>Step 4</td>
-									<td></td>
+									<td><button id="step4" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " >Ligand Immobilization  </button>
+										<br>
+									
+										<button id="step41" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " >Sample preparation   </button>
+									
+									
+										<button id="step42" type="button"
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " >Inject the sample rack  </button>
+									
+										<button id="step43" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " >Start run   </button>
+									
+									
+									</td>
+									
+								</tr>
+								<tr>
+									<td>Step 5</td>
+									<td><button id="step4" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " >Interaction analysis
+									</button>
+									<br>
+								
+									<button id="step51" type="button"
+									class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+									style="cursor: pointer; " >Sample preparation   </button>
+								
+								
+									<button id="step52" type="button"
+									class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+									style="cursor: pointer; " >Inject tray
+								</button>
+								
+									<button id="step53" type="button"
+									class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+									style="cursor: pointer; " >Start run   </button>
+								
+								
+								
+								</td>
+									
+								</tr>
+								<tr>
+									<td>Step 6</td>
+									<td><button id="step4" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " >Regeneration  </button></td>
+									
+								</tr>
+								<tr>
+									<td>Step 7</td>
+									<td><button id="step4" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " >Data analysis  </button></td>
 									
 								</tr>
 								</table>
@@ -93,11 +160,35 @@
 				<div class="col-md-6">
 					<div class="card card-body border border-0">
 					<div class="img-container">
-	<img src="./images/setup.png" id="setup" class="img-fluid">
+	<img src="./images/sprmachine.png" id="setup" class="img-fluid" alt="machine" data-toggle="tooltip" data-placement="top" title="SPR machine">
+
+	
 	
 	</div>
 	
 					</div>
+					</div>
+	
+					<div class="col-md-6">
+						<div class="card card-body border border-0">
+						<div class="img-container">
+		<img src="./images/setup.png" id="setuplight" class="img-fluid" >
+	
+		<canvas id="triangleCanvas"  ></canvas>
+		<canvas id="triangleCanvas1"  ></canvas>
+		
+		</div>
+		
+						</div>
+						</div>
+	
+
+					</div>
+
+
+			<div class="row">
+				<div class="col-md-6">
+					
 					</div>
 	
 					<div class="col-md-6">
@@ -148,5 +239,17 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
 		<script src="./js/main.js"></script>
 		<script src="./js/plotgraph.js"></script>
+
+
+		<script>
+			
+
+			$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+			
+		</script>
+
 	</body>
 </html>

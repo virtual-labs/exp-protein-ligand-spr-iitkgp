@@ -19,7 +19,34 @@
     position: relative;
     top:1%;
     left:5%;
-    width: 75%;
+    width:70%;
 
 
 }
+#setuplight{
+    position: relative;
+    top:1%;
+    left:5%;
+    width:90%;
+
+
+}
+
+#triangleCanvas{
+    position: absolute;
+    top:38%;
+    left:32.6%;
+    width: 20%;
+    height:70%;
+    transform: rotate(49deg);
+}
+
+#triangleCanvas1{
+    position: absolute;
+    top:38%;
+    left:51%;
+    width: 20%;
+    height:70%;
+    transform: rotate(-50deg);
+}
+

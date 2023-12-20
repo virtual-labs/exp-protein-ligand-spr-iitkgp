@@ -1,255 +1,405 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- Add CSS at the head of HTML file -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"></script-->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-		<link rel="stylesheet" href="./css/main.css">
-	</head>
-	
-	<body>
-		<div class="container-fluid p-2">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-header fs-5 fw-bold">Instructions</div>
-						<div class="card-body">
-							<ol>
-								<li>Click on "Start the Experiment" button
-								</li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ol>
-							<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
-						</div>
+
+<head>
+	<!-- Add CSS at the head of HTML file -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"></script-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<div class="container-fluid p-2">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header fs-5 fw-bold">Instructions</div>
+					<div class="card-body">
+						<ol>
+							<li>Click on "Start the Experiment" button
+							</li>
+							<li>Click on "Clean with MilliQ" button.</li>
+							<li>Next click on  "Dock the SPR sensor chip" button to enable "Open" button. Click on "Open" button.</li>
+							<li>Now click on the Sensor chip image. After sensor chip is placed, click on the "Close" button.</li>
+							<li>Click on "Primer with buffer" button.</li>
+							<li>Click on all the checkboxed in step 4 for sample preperation. </li>
+							<li>Next click on "Open sample rack" button. Once the rack comes out form
+								from the SPR machine, click on the sample tray and on ligand tube. Now, click on the "Insert the sample rack" button.
+							</li>
+							<li>Click on "Run" button to see the Ligand Immobilization.</li>
+							<li>Click on both the checkboxes in step 5 and on button "Sample preparation". </li>
+							<li>Click on "Open tray" button. Next click on the Analyte tube. After tube is placed
+								click on "Insert tray" button.
+							</li>
+							<li>Click on "Run" button to see the Interation analysis.</li>
+							<li>Click on "Regeneration (glycine pH3)" button.</li>
+							<li> Click on "Data analysis" button.</li>
+						</ol>
+						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-header fs-5 fw-bold">Input Panels</div>
-						<div class="card-body">
-							<table id="ex2tb2" class="m-1 table table-bordered">
-								<tr>
-									<td colspan="2">
-										<button id="step0" type="button"
-											class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-											style="cursor: pointer; " data-bs-toggle="modal"
-											data-bs-target="#exampleModal">Start the Experiment</button>
-	
-										<button id="steprs" type="button"
-											class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
-											style="cursor: pointer; float:right " onclick="restartexp()">Re-Do the
-											Experiment</button>
-									</td>
-								</tr>
-								<tr>
-									<td>Step 1</td>
-									<td><button id="step1" type="button"
-										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " >Clean with MilliQ </button></td>
-									
-								</tr>
-								<tr>
-									<td>Step 2</td>
-									<td><button id="step2" type="button"
-										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " >Dock the SPR sensor chip </button></td>
-									
-								</tr>
-								<tr>
-									<td>Step 3</td>
-									<td><button id="step3" type="button"
-										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " >Prime with buffer
-									</button></td>
-									
-								</tr>
-								<tr>
-									<td>Step 4</td>
-									<td><button id="step4" type="button"
-										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " >Ligand Immobilization  </button>
-										<br>
-									
-										<button id="step41" type="button"
-										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " >Sample preparation   </button>
-									
-									
-										<button id="step42" type="button"
-										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " >Inject the sample rack  </button>
-									
-										<button id="step43" type="button"
+			</div>
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header fs-5 fw-bold">Input Panels</div>
+					<div class="card-body">
+						<table id="ex2tb2" class="m-1 table table-bordered">
+							<tr>
+								<td colspan="2">
+									<button id="step0" type="button"
 										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " >Start run   </button>
-									
-									
-									</td>
-									
-								</tr>
-								<tr>
-									<td>Step 5</td>
-									<td><button id="step4" type="button"
-										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " >Interaction analysis
-									</button>
-									<br>
-								
-									<button id="step51" type="button"
-									class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
-									style="cursor: pointer; " >Sample preparation   </button>
-								
-								
-									<button id="step52" type="button"
-									class="btn btn-info border border-1  rounded-3 fs-6 m-1"
-									style="cursor: pointer; " >Inject tray
-								</button>
-								
-									<button id="step53" type="button"
-									class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-									style="cursor: pointer; " >Start run   </button>
-								
-								
-								
+										style="cursor: pointer; " data-bs-toggle="modal"
+										data-bs-target="#exampleModal">Start the Experiment</button>
+
+									<button id="steprs" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; float:right " onclick="restartexp()">Re-Do the
+										Experiment</button>
 								</td>
-									
-								</tr>
-								<tr>
-									<td>Step 6</td>
-									<td><button id="step4" type="button"
+							</tr>
+							<tr>
+								<td>Step 1</td>
+								<td><button id="step1" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " >Regeneration  </button></td>
-									
-								</tr>
-								<tr>
-									<td>Step 7</td>
-									<td><button id="step4" type="button"
+										style="cursor: pointer; " onclick="cleanwithmilliq()" disabled>Clean with MilliQ
+									</button></td>
+
+							</tr>
+							<tr>
+								<td>Step 2</td>
+								<td><button id="step2" type="button"
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="showopenbtn()" disabled>Dock the SPR sensor chip
+									</button>
+
+									<button id="stepopenschipdoor" type="button"
+										class="open btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="openschipdoor()" disabled>Open</button>
+								</td>
+
+							</tr>
+							<tr>
+								<td>Step 3</td>
+								<td><button id="step3" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " >Data analysis  </button></td>
-									
-								</tr>
-								</table>
-							</div>
-							</div>
-						</div>
-	
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-	
-					<div class="card">
-						<div class="card-header fs-5 fw-bold">Action</div>
-						<div class="card-body">
-							<p class="fs-5" id="actionid"></p>
-							
-						</div>
+										style="cursor: pointer; " onclick="primebuffer()" disabled>Prime with buffer
+									</button></td>
+
+							</tr>
+							<tr>
+								<td rowspan="5">Step 4</td>
+							<tr>
+								<td><!--button id="step4" type="button"
+										class="btn btn-light border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" >Ligand Immobilization </button-->
+										<p class="h5">Ligand Immobilization</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk1" disabled>
+										<label class="form-check-label" for="chk1">
+											EDC
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk2" disabled>
+										<label class="form-check-label" for="chk2">
+											NHS
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk3" disabled>
+										<label class="form-check-label" for="chk3">
+											Ethanolamine
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk4" disabled>
+										<label class="form-check-label" for="chk4">
+											Ligand
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk5" disabled>
+										<label class="form-check-label" for="chk5">
+											Sodium acetate buffer pH>3.5
+										</label>
+									</div>
+
+									<button id="step41" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="sampleprep()" disabled>Sample preparation </button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button id="step421" type="button"
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="openrack()" disabled>Open sample rack </button>
+									<button id="step422" type="button"
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="injectrack()" disabled>Insert the sample rack
+									</button>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<button id="step43" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="ligandrun()" disabled>Start run </button>
+
+
+								</td>
+							</tr>
+
+
+							</tr>
+
+							<tr>
+								<td rowspan="5">Step 5</td>
+
+							<tr>
+								<td><!--button id="step5" type="button"
+										class="btn btn-light border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; ">Interaction analysis
+									</button-->
+									<p class="h5">Interaction Analysis</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk51" disabled>
+										<label class="form-check-label" for="chk51">
+											Anlayte
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk52" disabled>
+										<label class="form-check-label" for="chk52">
+											Buffer
+										</label>
+									</div>
+
+									<button id="step51" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="analytesampleprep()" disabled>Sample preparation
+									</button>
+								</td>
+							</tr>
+
+							<tr>
+								<td><button id="step521" type="button"
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="opentray()" disabled>Open tray </button>
+
+									<button id="step522" type="button"
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="injecttray()" disabled>Insert tray
+									</button>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td>
+									<button id="step53" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="runinteraction()" disabled>Start run </button>
+
+
+
+								</td>
+							</tr>
+							</tr>
+							<tr>
+								<td>Step 6</td>
+								<td><button id="step6" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " disabled onclick="regglycine()">Regeneration (Glycine pH 3)</button></td>
+
+							</tr>
+							<tr>
+								<td>Step 7</td>
+								<td><button id="step7" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " disabled onclick="dataanalysis()">Data Analysis </button></td>
+
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
-	
-			<div class="row">
-				<div class="col-md-6">
-					<div class="card card-body border border-0">
+
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="card">
+					<div class="card-header fs-5 fw-bold">Action</div>
+					<div class="card-body">
+						<p class="fs-5" id="actionid"></p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body border border-1">
 					<div class="img-container">
-	<img src="./images/sprmachine.png" id="setup" class="img-fluid" alt="machine" data-toggle="tooltip" data-placement="top" title="SPR machine">
+						<img src="./images/sprmachine.png" id="setup" class="img-fluid" alt="machine"
+							data-toggle="tooltip" data-placement="top" title="SPR machine">
+						<img src="./images/sensor_chip.png" id="sensorchip" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Sensor chip">
+						<div class="door door1 ">
+							<img src="./images/opentrayforschip.png" id="opentsenchip" class="img-fluid"
+								data-toggle="tooltip" data-placement="top" title="Open sensor chip door">
+						</div>
 
-	
-	
+						<img src="./images/trayout.png" id="trayout" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Sample rack">
+						<img src="./images/sampletraytube.png" id="sampletray" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Sample tray">
+
+						<img src="./images/sampletube.png" id="sampletube" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Ligand">
+						<img src="./images/sampletube1.png" id="sampletube1" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Anlayte">
+
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body border border-1">
+					<div class="img-container">
+
+						<img src="./images/4_a_spr.png" id="stp4a" class="img-fluid">
+						<img src="./images/4_b_spr.png" id="stp4b" class="img-fluid">
+						<img src="./images/4_c_after_edc_nhs.png" id="stp4c" class="img-fluid">
+						<img src="./images/4_d_spr.png" id="stp4d" class="img-fluid">
+					</div>
+
+				</div>
+				<div class="card card-body border border-1">
+					<div class="img-container">
+						<img src="./images/setup.png" id="setuplight" class="img-fluid">
+						<img src="./images/light.png" id="light" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Light source">
+						<img src="./images/detector.png" id="detector" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Detector">
+						<img src="./images/ligand.png" id="ligandimg1" class="img-fluid">
+						<img src="./images/analyte.png" id="analyteimg1" class="img-fluid">
+						<img src="./images/ligand.png" id="ligandimg2" class="img-fluid">
+						<img src="./images/analyte.png" id="analyteimg2" class="img-fluid">
+						<img src="./images/ligand.png" id="ligandimg3" class="img-fluid">
+						<img src="./images/analyte.png" id="analyteimg3" class="img-fluid">
+						<img src="./images/asso_disso.png" id="asso_disso" class="img-fluid">
+						<canvas id="triangleCanvas"></canvas>
+						<canvas id="triangleCanvas1"></canvas>
+
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-6">
+
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body border border-1">
+					<div id="chartContainer" style="height: 500px; width: 100%;"></div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+
+		<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Viewing message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>A desktop or laptop is the preferred choice for an enhanced viewing experience.</p>
+						<p> When using a phone, it is recommended to enable the auto-rotate feature for an improved
+							viewing experience.</p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="start()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="cancelmsg()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 	</div>
-	
-					</div>
-					</div>
-	
-					<div class="col-md-6">
-						<div class="card card-body border border-0">
-						<div class="img-container">
-		<img src="./images/setup.png" id="setuplight" class="img-fluid" >
-	
-		<canvas id="triangleCanvas"  ></canvas>
-		<canvas id="triangleCanvas1"  ></canvas>
-		
-		</div>
-		
-						</div>
-						</div>
-	
-
-					</div>
 
 
-			<div class="row">
-				<div class="col-md-6">
-					
-					</div>
-	
-					<div class="col-md-6">
-						<div class="card card-body border border-1">
-							<div id="chartContainer" style="height: 500px; width: 100%;"></div>
-						</div>
-						</div>
-	
-	
+	<!-- Add JS at the bottom of HTML file -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-					</div>
+	<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/plotgraph.js"></script>
 
 
-
-						<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title">Viewing message</h5>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-									</div>
-									<div class="modal-body">
-										<p>A desktop or laptop is the preferred choice for an enhanced viewing experience.</p>
-										<p> When using a phone, it is recommended to enable the auto-rotate feature for an improved
-											viewing experience.</p>
-									</div>
-									<div class="modal-footer">
-			
-										<button type="button" class="btn btn-warning" onclick="start()"
-											data-bs-dismiss="modal">OK</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-	
-	
-			
-		</div>
-	
-	
-		<!-- Add JS at the bottom of HTML file -->
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	
-		<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
-		<script src="./js/main.js"></script>
-		<script src="./js/plotgraph.js"></script>
+	<script>
 
 
-		<script>
-			
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
 
-			$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
 
-			
-		</script>
+	</script>
 
-	</body>
+</body>
+
 </html>

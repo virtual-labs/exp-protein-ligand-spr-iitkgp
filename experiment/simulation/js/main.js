@@ -602,7 +602,7 @@ var imganl1 = null;
 var imganl2 = null;
 var imganl3 = null;
 function samplemove() {
-
+  document.getElementById('asso_disso').style.display="block";
   document.getElementById('asso_disso').style.top= 32 + "%";
   document.getElementById('asso_disso').style.left= 61 + "%";
   document.getElementById('asso_disso').style.transform= "rotate(-53deg)"; 
@@ -620,7 +620,7 @@ function samplemove() {
 
   imganl1 = setInterval(framea, 50); /* frame is 50 denotes the speed of the movement*/
   imganl2 = setInterval(framea2, 50);
-  imganl2 = setInterval(framea3, 50);
+  imganl3 = setInterval(framea3, 50);
   function framea() {
 
     if (anl1leftp == 55) {
@@ -662,8 +662,8 @@ function samplemove() {
     if (anl2leftp == 45) {
 
       clearInterval(imganl2);
-      imganl2 = setInterval(frametopa2, 50);
-
+      imganl2 = setInterval(frametoppa2, 50);
+      
     } else {
 
 
@@ -675,18 +675,15 @@ function samplemove() {
 
   }
 
-  function frametopa2() {
-
-    if (anl2topp == 30) {
+  function frametoppa2() {
+    
+    if (anl2topp ==30 ) {
 
       clearInterval(imganl2);
 
 
     } else {
-
-
       anl2topp++;
-
       anl2img.style.top = anl2topp + '%';
 
     }

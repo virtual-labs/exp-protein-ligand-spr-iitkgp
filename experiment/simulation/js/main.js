@@ -1,5 +1,9 @@
 //Your JavaScript goes in here
-
+/*
+Lab name: Experimental Biochemistry
+Exp name: Kinetic characterization of protein-ligand binding by surface plasmon resonance (SPR)
+File name: main.js
+Developer: Prakriti Dhang*/
 
 function start() {
 

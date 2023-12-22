@@ -51,7 +51,7 @@ element1.addEventListener("click", toggleDoor);
 function toggleDoor() {
   console.log("Door toggled!");
   element2.classList.toggle("doorOpen1");
-  window.scrollBy(0, 700);
+  window.scrollBy(0, 900);
 
 }
 
@@ -214,6 +214,7 @@ function injectrack() {
 /*************************************************************** Ligand run *************************************************************************/
 
 function ligandrun() {
+  window.scrollBy(0, 900);
   document.getElementById("step43").disabled = true;
   document.getElementById('ligandimg1').style.display="block";
   document.getElementById('ligandimg2').style.display="block";
@@ -521,6 +522,7 @@ function injecttray() {
 
 
 function runinteraction() {
+  window.scrollBy(0, 900);
   document.getElementById("step53").disabled = true;
   document.getElementById('analyteimg1').style.display="block";
   document.getElementById('analyteimg2').style.display="block";

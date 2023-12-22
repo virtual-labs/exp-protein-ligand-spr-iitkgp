@@ -1,4 +1,10 @@
 /* You CSS goes in here */
+/*
+Lab name: Experimental Biochemistry
+Exp name: Kinetic characterization of protein-ligand binding by surface plasmon resonance (SPR)
+File name: main.css
+Developer: Prakriti Dhang*/
+
 
 .card {
     margin-bottom: 5px;
@@ -20,6 +26,7 @@
     top:1%;
     left:5%;
     width:70%;
+    
 
 
 }
@@ -32,21 +39,221 @@
 
 }
 
+#opentsenchip{
+    position: absolute;
+    top:23.8%;
+    left:38%;
+    width: 12%;
+    height:12%;
+}
+
+
+.door
+{
+  background-color: transparent;
+  display:block;
+ 
+  width:12%;
+  height:12%;
+
+  /*Speed of the Door animation*/
+  transition: all 0.7s ease-in-out;
+}
+.door1 img{
+    
+  transform-style: preserve-3d;
+  transition: transform 2s, box-shadow .5s;
+  transform-origin: bottom center; 
+  
+
+}
+.doorOpen1 img
+  {
+    transform: perspective(800px) rotateX(-105deg);
+    
+  }
+
+
+
+  #trayout{
+    position: absolute;
+    top:72%;  /*72- 85*/
+    left:23.8%; /* 23.5 -78 */
+    width: 17%;
+    height:12%;
+}
+
+#sampletray{
+    position: absolute;
+    top:72%;
+    left:78%; /* 23.5 -78 */
+    width: 17%;
+    height:12%;
+}
+
+
+#sampletube{
+    position: absolute;
+    top:54%;  /*54 -87-74*/
+    left:78%; /* 78 -26-25 */
+    width: 3%;
+    height:8%;
+    display: none;
+}
+
+#sampletube1{
+    position: absolute;
+    top:54%; /*54 -87- 74*/
+    left:85%; /* 85 - 31-30 */
+    width: 3%;
+    height:8%;
+    display: none;
+}
+
+#sensorchip{
+    position: absolute;
+    top:20%;
+    left:78%;  /* 78-37  */
+    width: 15%;
+    height:18%;
+    cursor: pointer;
+}
+
+
+
+
+#stp4a{
+    position: relative;
+    top:1%;
+    left:1%; 
+    width: 25%;
+    cursor: pointer;
+    display: none;
+}
+#stp4b{
+    position: absolute;
+    top:1%;
+    left:30%; 
+    width: 18%;
+    cursor: pointer;
+    display: none;
+}
+#stp4c{
+    position: absolute;
+    top:1%;
+    left:50%; 
+    width: 18%;
+    cursor: pointer;
+    display: none;
+}
+#stp4d{
+    position: absolute;
+    top:1%;
+    left:70%;  
+    width:28%;
+    cursor: pointer;
+    display: none;
+}
+
+#light{
+    position: absolute;
+    top:74%;
+    left:20%;
+    width: 16%;
+    height:25%;
+}
+
+
+#detector{
+    position: absolute;
+    top:73%;
+    left:64%;
+    width: 16%;
+    height:25%;
+}
+
+#ligandimg1{
+    position: absolute;
+    top:15%; /** 10 * 32 **/
+    left:5%; /** 5 * 50 **/
+    width: 5%;
+    height:10%;
+    display: none;
+}
+
+#analyteimg1{
+    position: absolute;
+    top:17%; /** 7 * 32 **/
+    left:5%; /** 5 * 50 **/
+    width: 5%;
+    height:5%;
+    display: none;
+}
+
+
+#ligandimg2{
+    position: absolute;
+    top:15%; /** 10 * 32 **/
+    left:5%; /** 5 * 50 **/
+    width: 5%;
+    height:10%;
+    display: none;
+}
+
+#analyteimg2{
+    position: absolute;
+    top:17%; /** 7 * 32 **/
+    left:5%; /** 5 * 50 **/
+    width: 5%;
+    height:5%;
+    display: none;
+}
+
+#ligandimg3{
+    position: absolute;
+    top:15%; /** 10 * 32 **/
+    left:5%; /** 5 * 50 **/
+    width: 5%;
+    height:10%;
+    display: none;
+}
+
+#analyteimg3{
+    position: absolute;
+    top:17%; /** 7 * 32 **/
+    left:5%; /** 5 * 50 **/
+    width: 5%;
+    height:5%;
+    display: none;
+}
+
+
+#asso_disso{
+    position: absolute;
+    top:34%; /** 34 * 32 **/
+    left:61%; /** 61 *61  **/
+    width: 0.2%;
+    height:60%;
+    transform: rotate(-50deg); /*-50  -53 */
+    z-index: 2;
+    display: none;
+}
+
 #triangleCanvas{
     position: absolute;
-    top:38%;
-    left:32.6%;
-    width: 20%;
-    height:70%;
+    top:19%;
+    left:30.5%;
+    width: 18%;
+    height:90%;
     transform: rotate(49deg);
 }
 
 #triangleCanvas1{
     position: absolute;
-    top:38%;
-    left:51%;
+    top:19%;
+    left:50.8%;
     width: 20%;
-    height:70%;
-    transform: rotate(-50deg);
+    height:90%;
+    transform: rotate(-49deg);
 }
 

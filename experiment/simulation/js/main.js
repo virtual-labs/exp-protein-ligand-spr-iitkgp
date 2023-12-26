@@ -115,42 +115,82 @@ function primebuffer() {
 
 
 
-
-
-
-
-/*******************************************************  Sample prep **********************************************************************************/
-function sampleprep() {
-  if ((document.getElementById("chk1").checked) && (document.getElementById("chk2").checked) && (document.getElementById("chk3").checked) && (document.getElementById("chk4").checked) && (document.getElementById("chk5").checked)) {
-    document.getElementById("sampletube").style.display = "block";
+/*******************************************************  Sample prep  EDC NHS**********************************************************************************/
+function prepedcnhs(){
+  if ((document.getElementById("chk1").checked) && (document.getElementById("chk2").checked)){
+    document.getElementById("edcnhs").style.display = "block";
     document.getElementById("stp4a").style.display = "block";
-    document.getElementById("stp4b").style.display = "block";
+    document.getElementById("p2").style.display = "block";
+  
     document.getElementById("stp4c").style.display = "block";
-    document.getElementById("stp4d").style.display = "block";
     window.scrollBy(0, 500);
-    document.getElementById("step421").disabled = false;
     document.getElementById("chk1").disabled = true;
-  document.getElementById("chk2").disabled = true;
-  document.getElementById("chk3").disabled = true;
-  document.getElementById("chk4").disabled = true;
-  document.getElementById("chk5").disabled = true;
-  document.getElementById("step41").disabled = true;
+    document.getElementById("chk2").disabled = true;
+    $('#alertModal').modal('show');
+  $('.modal-body').text('The samples are placed in the sample tray ');
   }
   else {
     $('#alertModal').modal('show');
-    $('.modal-body').text('Check all the checkboxes for sample preparation. ');
+    $('.modal-body').text('Check EDC and NHS for sample preparation. ');
   }
 }
 
 
+/*******************************************************  Sample prep ligand sodium **********************************************************************************/
+function sampleprep() {
+  if ( (document.getElementById("chk4").checked) && (document.getElementById("chk5").checked)) {
+    document.getElementById("sampletube").style.display = "block";
+    document.getElementById("stp4a").style.display = "block";
+   // document.getElementById("stp4b").style.display = "block";
+    document.getElementById("stp4c").style.display = "block";
+    document.getElementById("stp4d").style.display = "block";
+    window.scrollBy(0, 500);
+    document.getElementById("step421").disabled = false;
+   
+  
+  document.getElementById("chk4").disabled = true;
+  document.getElementById("chk5").disabled = true;
+  document.getElementById("step41").disabled = true;
+  $('#alertModal').modal('show');
+  $('.modal-body').text('The samples are placed in the sample tray ');
+
+  }
+  else {
+    $('#alertModal').modal('show');
+    $('.modal-body').text('Check ligand and sodium acetate buffer for sample preparation. ');
+  }
+}
+
+
+
+function ethacheckbox(){
+  if ((document.getElementById("chk3").checked) ){
+    document.getElementById("etha").style.display = "block";
+    document.getElementById("stp4a").style.display = "block";
+  
+    document.getElementById("stp4c").style.display = "block";
+    document.getElementById("stp4d").style.display = "block";
+    window.scrollBy(0, 500);
+    document.getElementById("chk3").disabled = true;
+    $('#alertModal').modal('show');
+  $('.modal-body').text('The sample is placed in the sample tray ');
+  }
+  else {
+    $('#alertModal').modal('show');
+    $('.modal-body').text('Check EDC and NHS for sample preparation. ');
+  }
+}
+
 /**************************************************** open rack ******************************************************************/
 
 var imgsrack = null;
-var sampletray, trayoutimg, sampletube;
+var sampletray, trayoutimg, sampletube,sampletubeedc,sampletubeetha;
 function openrack() {
   trayoutimg = document.getElementById("trayout");
   sampletray = document.getElementById("sampletray");
   sampletube = document.getElementById("sampletube");
+  sampletubeedc = document.getElementById("edcnhs");
+  sampletubeetha = document.getElementById("etha");
   var schiptopp = 72; //initial  position
   window.scrollBy(0, 900);
   clearInterval(imgsrack);
@@ -162,7 +202,7 @@ function openrack() {
 
 
       sampletray.setAttribute("onclick", "sampletrayinsert()");
-      sampletube.setAttribute("onclick", "sampletubeinsert()");
+     // sampletube.setAttribute("onclick", "sampletubeinsert()");
       clearInterval(imgsrack);
 
     } else {
@@ -178,7 +218,14 @@ function openrack() {
 function sampletrayinsert() {
   sampletray.style.top = 85 + '%';
   sampletray.style.left = 23.8 + '%';
+  sampletube.style.top = 87 + '%';
+  sampletube.style.left = 25.8 + '%';
 
+  sampletubeedc.style.top = 87 + '%';
+  sampletubeedc.style.left = 30.5 + '%';
+
+  sampletubeetha.style.top = 87 + '%';
+  sampletubeetha.style.left = 35.2 + '%';
 }
 
 
@@ -203,7 +250,14 @@ function injectrack() {
   trayoutimg.style.top = 72 + '%';
   trayoutimg.style.left = 23.8 + '%';
   sampletube.style.top = 74 + '%';
-  sampletube.style.left = 25 + '%';
+  sampletube.style.left = 30.5 + '%';
+
+  sampletubeedc.style.top = 74 + '%';
+  sampletubeedc.style.left = 25.2 + '%';
+
+  sampletubeetha.style.top = 74 + '%';
+  sampletubeetha.style.left = 35.2 + '%';
+
   document.getElementById("step43").disabled = false;
   document.getElementById("step421").disabled = true;
   document.getElementById("step422").disabled = true;
@@ -437,12 +491,36 @@ function ligandmove() {
   
 }
 
+/**************************************************** Eject sample tray ******************************************************************/
+function ejectsampletray(){
+  window.scrollBy(0, 900);
+  sampletray.style.top = 72 + '%';
+  sampletray.style.left = 78 + '%';
+  sampletube.style.top = 74 + '%';
+  sampletube.style.left = 84.8 + '%';
 
+  sampletubeedc.style.top = 74 + '%';
+  sampletubeedc.style.left = 80 + '%';
+
+  sampletubeetha.style.top = 74 + '%';
+  sampletubeetha.style.left = 89.8+ '%';
+
+}
+/**************************************************** Remove edc. nhs, ethanolmine ******************************************************************/
+function removeedcnhssamples(){
+  $('#alertModal').modal('show');
+  $('.modal-body').text('Removed EDC, NHS and Ethanolmine sammple tubes. ');
+  document.getElementById("edcnhs").style.display="none";
+  document.getElementById("etha").style.display="none";
+
+}
 /**************************************************** Analyte sample prep ******************************************************************/
 
 function analytesampleprep() {
   if ((document.getElementById("chk51").checked) && (document.getElementById("chk52").checked)) {
     document.getElementById("sampletube1").style.display = "block";
+    sampletube1.style.top = 87 + '%';
+  sampletube1.style.left = 25.2 + '%';
     document.getElementById("step521").disabled = false;
     window.scrollBy(0, 900);
     document.getElementById("chk51").disabled = true;
@@ -461,34 +539,42 @@ function analytesampleprep() {
 /**************************************************** inject sample analyte tray ******************************************************************/
 
 var imgstray1 = null;
-var sampletray1, trayoutimg1, sampletube1;
+var sampletray1, trayoutimg1, sampletube1,sampletubeedc1,sampletubeetha1;
 function opentray() {
   trayoutimg1 = document.getElementById("trayout");
   sampletray1 = document.getElementById("sampletray");
   sampletube = document.getElementById("sampletube");
   sampletube1 = document.getElementById("sampletube1");
-  var schiptopp1 = 72;
+  sampletubeedc1 = document.getElementById("edcnhs");
+  sampletubeetha1 = document.getElementById("etha");
+  var straytopp1 = 72;
   var stubetopp1 = 74;//initial  position
+  var sedctopp1=74;
+  var sethatopp1=74;
   window.scrollBy(0, 900);
   clearInterval(imgstray1);
 
   imgstray1 = setInterval(frame, 50); /* frame is 40 denotes the speed of the movement*/
 
   function frame() {
-    if (schiptopp1 == 85 && stubetopp1 == 87) {
+    if (straytopp1 == 85 && stubetopp1 == 87 && sedctopp1 == 87 && sethatopp1 == 87 ) {
 
 
-      sampletube1.setAttribute("onclick", "sampletubeinsert1()");
+    // sampletube1.setAttribute("onclick", "sampletubeinsert1()");
 
       clearInterval(imgstray1);
 
     } else {
 
-      schiptopp1++;
+      straytopp1++;
       stubetopp1++;
-      trayoutimg.style.top = schiptopp1 + '%';
-      sampletray1.style.top = schiptopp1 + '%';
+      sedctopp1++;
+      sethatopp1++;
+      trayoutimg.style.top = straytopp1 + '%';
+      sampletray1.style.top = straytopp1 + '%';
       sampletube.style.top = stubetopp1 + '%';
+      sampletubeedc1.style.top = stubetopp1 + '%';
+      sampletubeetha1.style.top = stubetopp1 + '%';
 
     }
   }
@@ -497,7 +583,7 @@ function opentray() {
 
 function sampletubeinsert1() {
   sampletube1.style.top = 87 + '%';
-  sampletube1.style.left = 31 + '%';
+  sampletube1.style.left = 25.2 + '%';
   document.getElementById("step522").disabled = false;
 
 }
@@ -510,9 +596,10 @@ function injecttray() {
   trayoutimg.style.top = 72 + '%';
   trayoutimg.style.left = 23.8 + '%';
   sampletube.style.top = 74 + '%';
-  sampletube.style.left = 25 + '%';
+  sampletube.style.left = 30.5 + '%';
   sampletube1.style.top = 74 + '%';
-  sampletube1.style.left = 30 + '%';
+  sampletube1.style.left = 25.2 + '%';
+  
   document.getElementById("step53").disabled = false;
   document.getElementById("step521").disabled = true;
   document.getElementById("step522").disabled = true;
@@ -629,7 +716,7 @@ function samplemove() {
   imganl3 = setInterval(framea3, 50);
   function framea() {
 
-    if (anl1leftp == 55) {
+    if (anl1leftp == 56) {
 
       clearInterval(imganl1);
       imganl1 = setInterval(frametopa, 50);
@@ -647,7 +734,7 @@ function samplemove() {
 
   function frametopa() {
 
-    if (anl1topp == 30) {
+    if (anl1topp == 29) {
 
       clearInterval(imganl1);
 
@@ -665,7 +752,7 @@ function samplemove() {
   /* */
   function framea2() {
 
-    if (anl2leftp == 45) {
+    if (anl2leftp == 46) {
 
       clearInterval(imganl2);
       imganl2 = setInterval(frametoppa2, 50);
@@ -683,7 +770,7 @@ function samplemove() {
 
   function frametoppa2() {
     
-    if (anl2topp ==30 ) {
+    if (anl2topp ==29 ) {
 
       clearInterval(imganl2);
 
@@ -700,7 +787,7 @@ function samplemove() {
 
   function framea3() {
 
-    if (anl3leftp == 35) {
+    if (anl3leftp == 36) {
 
       clearInterval(imganl3);
       imganl3 = setInterval(frametopa3, 50);
@@ -718,7 +805,7 @@ function samplemove() {
 
   function frametopa3() {
 
-    if (anl3topp == 30) {
+    if (anl3topp == 29) {
 
       clearInterval(imganl3);
       document.getElementById("step6").disabled = false;
@@ -737,8 +824,8 @@ function samplemove() {
 }
 
 
-function regglycine(){
-  document.getElementById("step6").disabled = true;
+function addbuffer(){
+  
   document.getElementById("step7").disabled = false;
   document.getElementById('asso_disso').style.top= 34 + "%";
   document.getElementById('asso_disso').style.left= 61 + "%";
@@ -759,16 +846,16 @@ window.onload = function () {
       text: "Surface plasmon resonance (SPR)"
     },
     axisY: {
-      title: "Resonance signal",
+      title: "Response (μM)",
       minimum: -10,
-      maximum: 0,
+      maximum: 80,
       gridThickness: 0
 
     },
     axisX: {
-      title: "Time",
+      title: "Time (s)",
       minimum: 0,
-      maximum: 2,
+      maximum: 250,
       //axisYType: "secondary", // Set axisYType to "secondary" for X-axis at the top
       // axisYIndex: 0
 
@@ -784,5 +871,36 @@ window.onload = function () {
   });
   chart.render();
 
+
+  var chart = new CanvasJS.Chart("chartContainerb", {
+    animationEnabled: true,
+    title: {
+      text: "Surface plasmon resonance (SPR)"
+    },
+    axisY: {
+      title: "Response (μM)",
+      minimum: -10,
+      maximum: 80,
+      gridThickness: 0
+
+    },
+    axisX: {
+      title: "Time (s)",
+      minimum: 0,
+      maximum: 250,
+      //axisYType: "secondary", // Set axisYType to "secondary" for X-axis at the top
+      // axisYIndex: 0
+
+    },
+
+    data: [{
+      type: "spline",
+
+      dataPoints: [
+
+      ]
+    }]
+  });
+  chart.render();
 
 }

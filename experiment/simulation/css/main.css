@@ -89,25 +89,48 @@ Developer: Prakriti Dhang*/
     left:78%; /* 23.5 -78 */
     width: 17%;
     height:12%;
+    cursor: pointer;
 }
 
 
 #sampletube{
     position: absolute;
-    top:54%;  /*54 -87-74*/
-    left:78%; /* 78 -26-25 */
+    top:74%;  /*54 -87-74*/
+    left:84.8%; /* 78 -26-25 */
     width: 3%;
     height:8%;
     display: none;
+    cursor: pointer;
 }
 
-#sampletube1{
+#edcnhs{
     position: absolute;
-    top:54%; /*54 -87- 74*/
-    left:85%; /* 85 - 31-30 */
+    top:74%;  /*54 -87-74*/
+    left:80%; /* 78 -26-25 */
     width: 3%;
     height:8%;
     display: none;
+    cursor: pointer;
+}
+
+
+#etha{
+    position: absolute;
+    top:74%;  /*54 -87-74*/
+    left:89.8%; /* 78 -26-25 */
+    width: 3%;
+    height:8%;
+    display: none;
+    cursor: pointer;
+}
+#sampletube1{
+    position: absolute;
+    top:74%; /*54 -87- 74*/
+    left:80%; /* 85 - 31-30 */
+    width: 3%;
+    height:8%;
+    display: none;
+    cursor: pointer;
 }
 
 #sensorchip{
@@ -141,7 +164,7 @@ Developer: Prakriti Dhang*/
 #stp4c{
     position: absolute;
     top:1%;
-    left:50%; 
+    left:40%; 
     width: 18%;
     cursor: pointer;
     display: none;
@@ -174,7 +197,7 @@ Developer: Prakriti Dhang*/
 
 #ligandimg1{
     position: absolute;
-    top:15%; /** 10 * 32 **/
+    top:15%; /** 15 * 32 **/
     left:5%; /** 5 * 50 **/
     width: 5%;
     height:10%;
@@ -183,17 +206,17 @@ Developer: Prakriti Dhang*/
 
 #analyteimg1{
     position: absolute;
-    top:17%; /** 7 * 32 **/
-    left:5%; /** 5 * 50 **/
-    width: 5%;
-    height:5%;
+    top:16%; /** 16 * 32 **/
+    left:6%; /** 6 * 50 **/
+    width: 3%;
+    height:6%;
     display: none;
 }
 
 
 #ligandimg2{
     position: absolute;
-    top:15%; /** 10 * 32 **/
+    top:15%; /** 150 * 32 **/
     left:5%; /** 5 * 50 **/
     width: 5%;
     height:10%;
@@ -202,16 +225,16 @@ Developer: Prakriti Dhang*/
 
 #analyteimg2{
     position: absolute;
-    top:17%; /** 7 * 32 **/
+    top:17%; /** 17 * 32 **/
     left:5%; /** 5 * 50 **/
-    width: 5%;
-    height:5%;
+    width: 3%;
+    height:6%;
     display: none;
 }
 
 #ligandimg3{
     position: absolute;
-    top:15%; /** 10 * 32 **/
+    top:15%; /** 15 * 32 **/
     left:5%; /** 5 * 50 **/
     width: 5%;
     height:10%;
@@ -220,10 +243,10 @@ Developer: Prakriti Dhang*/
 
 #analyteimg3{
     position: absolute;
-    top:17%; /** 7 * 32 **/
+    top:17%; /** 17 * 32 **/
     left:5%; /** 5 * 50 **/
-    width: 5%;
-    height:5%;
+    width: 3%;
+    height:6%;
     display: none;
 }
 

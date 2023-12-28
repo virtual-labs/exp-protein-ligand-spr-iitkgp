@@ -73,6 +73,40 @@ Developer: Prakriti Dhang*/
     
   }
 
+  #sampletdoor{
+    position: absolute;
+    top:67%;
+    left:22.3%;
+    width: 20%;
+    height:21%;
+    z-index: 4;
+  }
+
+  .sdoor
+  {
+    background-color: transparent;
+    display:block;
+    width:12%;
+    height:12%;
+  
+    /*Speed of the Door animation*/
+    transition: all 0.7s ease-in-out;
+  }
+
+
+  .sdoor1 img{
+    
+    transform-style: preserve-3d;
+    transition: transform 2s, box-shadow .5s;
+    transform-origin: top center; 
+    
+  
+  }
+  .sdoorOpen1 img
+    {
+      transform: perspective(800px) rotateX(-60deg);
+      
+    }
 
 
   #trayout{
@@ -89,25 +123,48 @@ Developer: Prakriti Dhang*/
     left:78%; /* 23.5 -78 */
     width: 17%;
     height:12%;
+    cursor: pointer;
 }
 
 
 #sampletube{
     position: absolute;
-    top:54%;  /*54 -87-74*/
-    left:78%; /* 78 -26-25 */
+    top:74%;  /*54 -87-74*/
+    left:84.8%; /* 78 -26-25 */
     width: 3%;
     height:8%;
     display: none;
+    cursor: pointer;
 }
 
-#sampletube1{
+#edcnhs{
     position: absolute;
-    top:54%; /*54 -87- 74*/
-    left:85%; /* 85 - 31-30 */
+    top:74%;  /*54 -87-74*/
+    left:80%; /* 78 -26-25 */
     width: 3%;
     height:8%;
     display: none;
+    cursor: pointer;
+}
+
+
+#etha{
+    position: absolute;
+    top:74%;  /*54 -87-74*/
+    left:89.8%; /* 78 -26-25 */
+    width: 3%;
+    height:8%;
+    display: none;
+    cursor: pointer;
+}
+#sampletube1{
+    position: absolute;
+    top:74%; /*54 -87- 74*/
+    left:80%; /* 85 - 31-30 */
+    width: 3%;
+    height:8%;
+    display: none;
+    cursor: pointer;
 }
 
 #sensorchip{
@@ -140,17 +197,17 @@ Developer: Prakriti Dhang*/
 }
 #stp4c{
     position: absolute;
-    top:1%;
-    left:50%; 
-    width: 18%;
+    top:5%;
+    left:33%; 
+    width: 25%;
     cursor: pointer;
     display: none;
 }
 #stp4d{
     position: absolute;
     top:1%;
-    left:70%;  
-    width:28%;
+    left:68%;  
+    width:29%;
     cursor: pointer;
     display: none;
 }
@@ -174,7 +231,7 @@ Developer: Prakriti Dhang*/
 
 #ligandimg1{
     position: absolute;
-    top:15%; /** 10 * 32 **/
+    top:15%; /** 15 * 32 **/
     left:5%; /** 5 * 50 **/
     width: 5%;
     height:10%;
@@ -183,17 +240,17 @@ Developer: Prakriti Dhang*/
 
 #analyteimg1{
     position: absolute;
-    top:17%; /** 7 * 32 **/
-    left:5%; /** 5 * 50 **/
-    width: 5%;
-    height:5%;
+    top:16%; /** 16 * 32 **/
+    left:6%; /** 6 * 50 **/
+    width: 3%;
+    height:6%;
     display: none;
 }
 
 
 #ligandimg2{
     position: absolute;
-    top:15%; /** 10 * 32 **/
+    top:15%; /** 150 * 32 **/
     left:5%; /** 5 * 50 **/
     width: 5%;
     height:10%;
@@ -202,16 +259,16 @@ Developer: Prakriti Dhang*/
 
 #analyteimg2{
     position: absolute;
-    top:17%; /** 7 * 32 **/
+    top:17%; /** 17 * 32 **/
     left:5%; /** 5 * 50 **/
-    width: 5%;
-    height:5%;
+    width: 3%;
+    height:6%;
     display: none;
 }
 
 #ligandimg3{
     position: absolute;
-    top:15%; /** 10 * 32 **/
+    top:15%; /** 15 * 32 **/
     left:5%; /** 5 * 50 **/
     width: 5%;
     height:10%;
@@ -220,10 +277,10 @@ Developer: Prakriti Dhang*/
 
 #analyteimg3{
     position: absolute;
-    top:17%; /** 7 * 32 **/
+    top:17%; /** 17 * 32 **/
     left:5%; /** 5 * 50 **/
-    width: 5%;
-    height:5%;
+    width: 3%;
+    height:6%;
     display: none;
 }
 
@@ -257,3 +314,160 @@ Developer: Prakriti Dhang*/
     transform: rotate(-49deg);
 }
 
+#bufferc1{
+    position: absolute;
+    top:5%;
+    left:6%;
+    width: 16%;
+    height:20%;
+    opacity: 45%;
+   
+    
+}
+#bufferc2{
+    position: absolute;
+    top:10%;
+    left:20%;
+    width: 15%;
+    height:20%;
+    transform: rotate(21deg);
+    opacity: 45%;
+   
+    
+}
+#bufferc3{
+    position: absolute;
+    top:16%;
+    left:32.9%;
+    width: 35%;
+    height:20%;
+    opacity: 45%;
+}
+
+
+#bufferc4{
+    position: absolute;
+    top:9%;
+    left:65%;
+    width: 15%;
+    height:20%;
+    transform: rotate(-21deg);
+    opacity: 45%;
+}
+
+#bufferc5{
+    position: absolute;
+    top:5%;
+    left:78%;
+    width: 16%;
+    height:20%;
+    opacity: 45%;
+}
+
+.btn-purple{--bs-btn-color:#fff;
+    --bs-btn-bg:#a646ff;
+    --bs-btn-border-color:#a646ff;
+    --bs-btn-hover-color:#fff;--bs-btn-hover-bg:#9130ec;
+    --bs-btn-hover-border-color:#a646ff;
+    --bs-btn-focus-shadow-rgb:49,132,253;
+    --bs-btn-active-color:#fff;
+    --bs-btn-active-bg:#a646ff;
+    --bs-btn-active-border-color:purple;
+    --bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color:#fff;
+    --bs-btn-disabled-bg:#a646ff;
+    --bs-btn-disabled-border-color:#a646ff;
+}
+
+
+
+  
+
+  .btn-violet {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #673ab7;
+    --bs-btn-border-color: #673ab7;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #5e35b1;
+    --bs-btn-hover-border-color: #673ab7;
+    --bs-btn-focus-shadow-rgb: 103, 58, 183;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #673ab7;
+    --bs-btn-active-border-color: #4527a0;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #673ab7;
+    --bs-btn-disabled-border-color: #673ab7;
+  }
+
+  .btn-orange {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ff9800;
+    --bs-btn-border-color: #ff9800;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #f57c00;
+    --bs-btn-hover-border-color: #ff9800;
+    --bs-btn-focus-shadow-rgb: 255, 152, 0;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ff9800;
+    --bs-btn-active-border-color: #e65100;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #ff9800;
+    --bs-btn-disabled-border-color: #ff9800;
+  }
+
+
+
+
+  /**/
+  .btn-blue {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #2196F3;
+    --bs-btn-border-color: #2196F3;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1565C0;
+    --bs-btn-hover-border-color: #2196F3;
+    --bs-btn-focus-shadow-rgb: 33, 150, 243;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2196F3;
+    --bs-btn-active-border-color: #0D47A1;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #2196F3;
+    --bs-btn-disabled-border-color: #2196F3;
+  }
+
+  .btn-indian-red {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #CD5C5C;
+  --bs-btn-border-color: #CD5C5C;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #B22222;
+  --bs-btn-hover-border-color: #CD5C5C;
+  --bs-btn-focus-shadow-rgb: 205, 92, 92;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #CD5C5C;
+  --bs-btn-active-border-color: #8B0000;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #CD5C5C;
+  --bs-btn-disabled-border-color: #CD5C5C;
+}
+
+.btn-lime {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #00FF00;
+    --bs-btn-border-color: #00FF00;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #00E600;
+    --bs-btn-hover-border-color: #00FF00;
+    --bs-btn-focus-shadow-rgb: 0, 255, 0;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #00FF00;
+    --bs-btn-active-border-color: #00B300;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #00FF00;
+    --bs-btn-disabled-border-color: #00FF00;
+  }

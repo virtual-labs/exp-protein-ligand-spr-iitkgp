@@ -32,21 +32,49 @@ Developer: Prakriti Dhang
 							<li>Click on "Start the Experiment" button
 							</li>
 							<li>Click on "Clean with MilliQ" button.</li>
-							<li>Next click on  "Dock the SPR sensor chip" button to enable "Open" button. Click on "Open" button.</li>
-							<li>Now click on the Sensor chip image. After sensor chip is placed, click on the "Close" button.</li>
-							<li>Click on "Primer with buffer" button.</li>
-							<li>Click on all the checkboxed in step 4 for sample preperation. </li>
-							<li>Next click on "Open sample rack" button. Once the rack comes out form
-								from the SPR machine, click on the sample tray and on ligand tube. Now, click on the "Insert the sample rack" button.
+							<li>Next click on "Dock the SPR sensor chip" button to enable "Open sensor chip door" button. Click on "Open sensor chip door"
+								button.</li>
+							<li>Now click on the Sensor chip image. After sensor chip is placed in the machine, click on
+								the "Close"
+								button.</li>
+							<li>Check all the composition required for preparing buffer. Click on "Primer with buffer"
+								button.</li>
+							<li>Click on "EDC" and "NHS" checkboxes in step 4 and on button "Sample preparation" for sample
+								preparation. </li>
+							<li>Click on "Ligand" and "Sodium acetate buffer pH>3.5" checkboxes in step 4 and on button
+								"Sample preparation" for sample preparation. </li>
+							<li>Click on the "Ethanolamine" checkbox in step 4. </li>
+							
+							
+
+								<li>Now click on the "Open sample tray door" button in step 4. </li>
+								<ol>
+								<li>Next click on "Eject tray plate" button. Once the plate comes out 
+									from the SPR machine, click on the sample tray image.</li>
+								<li>Click on the
+									"Inject tray plate" button. </li>
+								<li>Click on the "Close sample tray door" button.</li>
+								</li>
+							</ol>
+
+							<li>Click on "Run SPR machine" button to see the Ligand Immobilization.</li>
+							
+							<li>Now click on the "Open sample tray door" button in step 5. </li>
+							<ol>
+							<li>Next click on "Eject tray plate" button. Once the plate comes out form
+								from the SPR machine, click on the "Remove EDC, NHS and
+								ethanolmine sample tubes" button.</li>
+								<li>Click on both the checkboxes in step 5 and on button "Sample preparation". </li>
+							<li>Click on the
+								"Inject tray plate" button. </li>
+							<li>Click on the "Close sample tray door" button.</li>
 							</li>
-							<li>Click on "Run" button to see the Ligand Immobilization.</li>
-							<li>Click on both the checkboxes in step 5 and on button "Sample preparation". </li>
-							<li>Click on "Open tray" button. Next click on the Analyte tube. After tube is placed
-								click on "Insert tray" button.
-							</li>
-							<li>Click on "Run" button to see the Interation analysis.</li>
-							<li>Click on "Regeneration (glycine pH3)" button.</li>
-							<li> Click on "Data analysis" button.</li>
+						</ol>
+
+							
+							<li>Click on "Run SPR machine" button to see the Interation analysis.</li>
+							<li>Click on "Inject buffer" button.</li>
+							<li> Click on "Data analysis A" and "Data analysis B" button.</li>
 						</ol>
 						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
 					</div>
@@ -80,32 +108,60 @@ Developer: Prakriti Dhang
 							</tr>
 							<tr>
 								<td>Step 2</td>
-								<td><button id="step2" type="button"
-										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer;" onclick="showopenbtn()" disabled>Dock the SPR sensor chip
-									</button>
+								<td><p class="h5">Dock the SPR sensor
+									chip</p><!--button id="step2" type="button"
+										class="btn btn-orange border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="showopenbtn()" disabled>Dock the SPR sensor
+										chip
+									</button-->
 
 									<button id="stepopenschipdoor" type="button"
-										class="open btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="openschipdoor()" disabled>Open</button>
+										class="open btn btn-orange border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="openschipdoor()" disabled>Open sensor chip door</button>
 								</td>
 
 							</tr>
 							<tr>
 								<td>Step 3</td>
-								<td><button id="step3" type="button"
+								<td>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk31" disabled>
+										<label class="form-check-label" for="chk31">
+											10mM HEPES
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk32" disabled>
+										<label class="form-check-label" for="chk32">
+											150mM NaCl
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk33" disabled>
+										<label class="form-check-label" for="chk33">
+											3mM EDTA
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk34" disabled>
+										<label class="form-check-label" for="chk34">
+											0.005% P20
+										</label>
+									</div>
+									<button id="step3" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
 										style="cursor: pointer; " onclick="primebuffer()" disabled>Prime with buffer
-									</button></td>
+									</button>
+								</td>
 
 							</tr>
 							<tr>
-								<td rowspan="5">Step 4</td>
+								<td rowspan="7">Step 4</td>
 							<tr>
 								<td><!--button id="step4" type="button"
 										class="btn btn-light border border-1  rounded-3 fs-6 m-1"
 										style="cursor: pointer;" >Ligand Immobilization </button-->
-										<p class="h5">Ligand Immobilization</p>
+									<p class="h5">Ligand Immobilization</p>
 								</td>
 							</tr>
 							<tr>
@@ -122,38 +178,66 @@ Developer: Prakriti Dhang
 											NHS
 										</label>
 									</div>
+
+									<button id="step40" type="button"
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="prepedcnhs()" disabled> Sample preparation
+									</button>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
 									<div class="form-check div-inline">
 										<input class="form-check-input" type="checkbox" value="" id="chk3" disabled>
 										<label class="form-check-label" for="chk3">
-											Ethanolamine
+											Ligand
 										</label>
 									</div>
 									<div class="form-check div-inline">
 										<input class="form-check-input" type="checkbox" value="" id="chk4" disabled>
 										<label class="form-check-label" for="chk4">
-											Ligand
-										</label>
-									</div>
-									<div class="form-check div-inline">
-										<input class="form-check-input" type="checkbox" value="" id="chk5" disabled>
-										<label class="form-check-label" for="chk5">
 											Sodium acetate buffer pH>3.5
 										</label>
 									</div>
 
 									<button id="step41" type="button"
-										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="sampleprep()" disabled>Sample preparation </button>
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="sampleprep()" disabled>Sample preparation
+									</button>
+
+
+
 								</td>
 							</tr>
+
 							<tr>
 								<td>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk5"
+											onclick="ethacheckbox()" disabled>
+										<label class="form-check-label" for="chk5">
+											Ethanolamine
+										</label>
+									</div>
+								</td>
+							</tr>
+
+
+
+							<tr>
+								<td>
+									<button id="stepopenstraydoor" type="button"
+										class="open1 btn btn-secondary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="openstraytpdoor()" disabled >Open sample tray door</button>
+
 									<button id="step421" type="button"
-										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer;" onclick="openrack()" disabled>Open sample rack </button>
+										class="btn btn-blue border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="openrack()" disabled>Eject tray plate
+									</button>
 									<button id="step422" type="button"
-										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer;" onclick="injectrack()" disabled>Insert the sample rack
+										class="btn btn-blue border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="injectrack()" disabled>Inject tray plate
 									</button>
 								</td>
 							</tr>
@@ -162,7 +246,7 @@ Developer: Prakriti Dhang
 								<td>
 									<button id="step43" type="button"
 										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="ligandrun()" disabled>Run </button>
+										style="cursor: pointer; " onclick="ligandrun()" disabled>Run SPR machine </button>
 
 
 								</td>
@@ -172,7 +256,7 @@ Developer: Prakriti Dhang
 							</tr>
 
 							<tr>
-								<td rowspan="5">Step 5</td>
+								<td rowspan="7">Step 5</td>
 
 							<tr>
 								<td><!--button id="step5" type="button"
@@ -180,6 +264,22 @@ Developer: Prakriti Dhang
 										style="cursor: pointer; ">Interaction analysis
 									</button-->
 									<p class="h5">Interaction Analysis</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<button id="stepopenstraydoor1" type="button"
+										class="open2 btn btn-secondary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="openstraytpdoor1()" disabled>Open sample tray door</button>
+									<button id="step521" type="button"
+										class="btn btn-blue border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="opentray()" disabled>Eject tray plate </button>
+									<button id="step50b" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="removeedcnhssamples()" disabled>Remove EDC, NHS and
+										ethanolmine sample tubes
+									</button>
 								</td>
 							</tr>
 							<tr>
@@ -198,20 +298,19 @@ Developer: Prakriti Dhang
 									</div>
 
 									<button id="step51" type="button"
-										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="analytesampleprep()" disabled>Sample preparation
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="analytesampleprep()" disabled>Sample
+										preparation
 									</button>
 								</td>
 							</tr>
 
 							<tr>
-								<td><button id="step521" type="button"
-										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer;" onclick="opentray()" disabled>Open tray </button>
+								<td>
 
 									<button id="step522" type="button"
-										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="injecttray()" disabled>Insert tray
+										class="btn btn-blue border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="injecttray()" disabled>Inject tray plate
 									</button>
 								</td>
 							</tr>
@@ -221,25 +320,46 @@ Developer: Prakriti Dhang
 								<td>
 									<button id="step53" type="button"
 										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="runinteraction()" disabled>Run </button>
+										style="cursor: pointer; " onclick="runinteraction()" disabled>Run SPR machine</button>
 
 
 
 								</td>
 							</tr>
-							</tr>
 							<tr>
+								<td>
+									<button id="step54" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="addbuffer()" disabled>Inject Buffer </button>
+
+
+								</td>
+							</tr>
+
+							</tr>
+							<!--tr>
 								<td>Step 6</td>
 								<td><button id="step6" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
 										style="cursor: pointer; " disabled onclick="regglycine()">Regeneration (Glycine pH 3)</button></td>
 
+							</tr-->
+							<tr>
+								<td rowspan="3">Step 7</td>
+							<tr>
+								<td><button id="step7" type="button"
+										class="btn btn-violet border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="dataanalysis()" disabled>Data Analysis A </button>
+
+								</td>
 							</tr>
 							<tr>
-								<td>Step 7</td>
-								<td><button id="step7" type="button"
-										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " disabled onclick="dataanalysis()">Data Analysis </button></td>
+								<td>
+									<button id="step8" type="button"
+										class="btn btn-indian-red border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " disabled>Data Analysis B </button>
+								</td>
+							</tr>
 
 							</tr>
 						</table>
@@ -248,7 +368,7 @@ Developer: Prakriti Dhang
 			</div>
 
 		</div>
-		<div class="row">
+		<!--div class="row">
 			<div class="col-md-12">
 
 				<div class="card">
@@ -259,26 +379,34 @@ Developer: Prakriti Dhang
 					</div>
 				</div>
 			</div>
-		</div>
+		</div-->
 
 		<div class="row">
 			<div class="col-md-6">
 				<div class="card card-body border border-1">
 					<div class="img-container">
-						<img src="./images/sprmachine.png" id="setup" class="img-fluid" alt="machine"
+						<img src="./images/sprmachine1.png" id="setup" class="img-fluid" alt="machine"
 							data-toggle="tooltip" data-placement="top" title="SPR machine">
 						<img src="./images/sensor_chip.png" id="sensorchip" class="img-fluid" data-toggle="tooltip"
 							data-placement="top" title="Sensor chip">
 						<div class="door door1 ">
 							<img src="./images/opentrayforschip.png" id="opentsenchip" class="img-fluid"
-								data-toggle="tooltip" data-placement="top" title="Open sensor chip door">
+								data-toggle="tooltip" data-placement="top" title="Sensor chip door">
+						</div>
+
+						<div class="sdoor sdoor1 ">
+							<img src="./images/sampletraydoor.png" id="sampletdoor" class="img-fluid"
+								data-toggle="tooltip" data-placement="top" title="Sample tray door">
 						</div>
 
 						<img src="./images/trayout.png" id="trayout" class="img-fluid" data-toggle="tooltip"
-							data-placement="top" title="Sample rack">
+							data-placement="top" title="Tray plate">
 						<img src="./images/sampletraytube.png" id="sampletray" class="img-fluid" data-toggle="tooltip"
 							data-placement="top" title="Sample tray">
-
+						<img src="./images/edcnhs.png" id="edcnhs" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="EDC and NHS">
+						<img src="./images/etha.png" id="etha" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Ethanolamine">
 						<img src="./images/sampletube.png" id="sampletube" class="img-fluid" data-toggle="tooltip"
 							data-placement="top" title="Ligand">
 						<img src="./images/sampletube1.png" id="sampletube1" class="img-fluid" data-toggle="tooltip"
@@ -292,11 +420,12 @@ Developer: Prakriti Dhang
 
 			<div class="col-md-6">
 				<div class="card card-body border border-1">
+					<p id="p2" class="h5" style="display: none;">Covalent immobilization using amine coupling method</p>
 					<div class="img-container">
 
 						<img src="./images/4_a_spr.png" id="stp4a" class="img-fluid">
-						<img src="./images/4_b_spr.png" id="stp4b" class="img-fluid">
-						<img src="./images/4_c_after_edc_nhs.png" id="stp4c" class="img-fluid">
+						<!--img src="./images/4_b_spr.png" id="stp4b" class="img-fluid"-->
+						<img src="./images/4_immobilization.png" id="stp4c" class="img-fluid">
 						<img src="./images/4_d_spr.png" id="stp4d" class="img-fluid">
 					</div>
 
@@ -308,15 +437,23 @@ Developer: Prakriti Dhang
 							data-placement="top" title="Light source">
 						<img src="./images/detector.png" id="detector" class="img-fluid" data-toggle="tooltip"
 							data-placement="top" title="Detector">
-						<img src="./images/ligand.png" id="ligandimg1" class="img-fluid">
-						<img src="./images/analyte.png" id="analyteimg1" class="img-fluid">
-						<img src="./images/ligand.png" id="ligandimg2" class="img-fluid">
-						<img src="./images/analyte.png" id="analyteimg2" class="img-fluid">
-						<img src="./images/ligand.png" id="ligandimg3" class="img-fluid">
-						<img src="./images/analyte.png" id="analyteimg3" class="img-fluid">
+						<img src="./images/ligand_img.png" id="ligandimg1" class="img-fluid">
+						<img src="./images/analyte_img.png" id="analyteimg1" class="img-fluid">
+						<img src="./images/ligand_img.png" id="ligandimg2" class="img-fluid">
+						<img src="./images/analyte_img.png" id="analyteimg2" class="img-fluid">
+						<img src="./images/ligand_img.png" id="ligandimg3" class="img-fluid">
+						<img src="./images/analyte_img.png" id="analyteimg3" class="img-fluid">
 						<img src="./images/asso_disso.png" id="asso_disso" class="img-fluid">
 						<canvas id="triangleCanvas"></canvas>
 						<canvas id="triangleCanvas1"></canvas>
+
+
+						<canvas width="10px" height="20px" id="bufferc1" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="bufferc2" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="bufferc3" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="bufferc4" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="bufferc5" style="border: 0px solid black;"></canvas>
+						
 
 					</div>
 
@@ -328,6 +465,7 @@ Developer: Prakriti Dhang
 
 
 		<div class="row">
+
 			<div class="col-md-6">
 
 			</div>
@@ -337,8 +475,6 @@ Developer: Prakriti Dhang
 					<div id="chartContainer" style="height: 500px; width: 100%;"></div>
 				</div>
 			</div>
-
-
 
 		</div>
 
@@ -397,6 +533,7 @@ Developer: Prakriti Dhang
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
 	<script src="./js/main.js"></script>
 	<script src="./js/plotgraph.js"></script>
+	<script src="./js/plotgraph_a.js"></script>
 
 
 	<script>

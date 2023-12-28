@@ -59,12 +59,12 @@ function toggleDoor() {
 function openschipdoor() {
   var btntext = document.getElementById("stepopenschipdoor");
 
-  if (btntext.innerHTML === "Open door") {
-    btntext.innerHTML = "Close door";
+  if (btntext.innerHTML === "Open sensor chip door") {
+    btntext.innerHTML = "Close sensor chip door";
     sensorchipimg.setAttribute("onclick", "insertchip()");
     document.getElementById("stepopenschipdoor").disabled = true;
   } else {
-    btntext.innerHTML = "Open door";
+    btntext.innerHTML = "Open sensor chip door";
     
     //document.getElementById("step2").disabled = true;
     document.getElementById("stepopenschipdoor").disabled = true;
@@ -223,13 +223,13 @@ function toggleDoors1() {
 function openstraytpdoor() {
   var btntexts1 = document.getElementById("stepopenstraydoor");
 
-  if (btntexts1.innerHTML === "Open door") {
-    btntexts1.innerHTML = "Close door";
+  if (btntexts1.innerHTML === "Open sample tray door") {
+    btntexts1.innerHTML = "Close sample tray door";
     //sensorchipimg.setAttribute("onclick", "insertchip()");
     document.getElementById("step421").disabled = false;
     document.getElementById("stepopenstraydoor").disabled = true;
   } else {
-    btntexts1.innerHTML = "Open door";
+    btntexts1.innerHTML = "Open sample tray door";
     document.getElementById("step43").disabled = false;
     
     document.getElementById("stepopenstraydoor").disabled = true;
@@ -573,13 +573,13 @@ function toggleDoors21() {
 function openstraytpdoor1() {
   var btntexts21 = document.getElementById("stepopenstraydoor1");
 
-  if (btntexts21.innerHTML === "Open door") {
-    btntexts21.innerHTML = "Close door";
+  if (btntexts21.innerHTML === "Open sample tray door") {
+    btntexts21.innerHTML = "Close sample tray door";
     //sensorchipimg.setAttribute("onclick", "insertchip()");
     document.getElementById("step521").disabled = false;
     document.getElementById("stepopenstraydoor1").disabled = true;
   } else {
-    btntexts21.innerHTML = "Open door";
+    btntexts21.innerHTML = "Open sample tray door";
     
     document.getElementById("step53").disabled = false;
 

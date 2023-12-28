@@ -932,7 +932,7 @@ var imganlb1 = null;
 var imganlb2 = null;
 var imganlb3 = null;
 function addbuffer(){
- 
+  window.scrollBy(0, 500);
   document.getElementById("step7").disabled = false;
   document.getElementById("step8").disabled = false;
   document.getElementById("step54").disabled = true;
@@ -948,7 +948,7 @@ canvasp1 = document.getElementById("bufferc1");
       function drawLinep1() {
 
 
-        ctxgp1.strokeStyle = '#89CFFF';
+        ctxgp1.strokeStyle = '#DAE8FC';
         ctxgp1.lineWidth = 600;
         ctxgp1.beginPath();
         ctxgp1.moveTo(posYp1, 0); /*  */
@@ -987,7 +987,7 @@ canvasp2 = document.getElementById("bufferc2");
       function drawLinep2() {
 
 
-        ctxgp2.strokeStyle = '#89CFFF ';
+        ctxgp2.strokeStyle = '#DAE8FC ';
         ctxgp2.lineWidth = 600;
         ctxgp2.beginPath();
         ctxgp2.moveTo(posYp2, 0); /*  */
@@ -1024,24 +1024,23 @@ function buffercanvas3(){
 
   var anlb1img = document.getElementById("analyteimg1");
   var anlb2img = document.getElementById("analyteimg2");
-  var anlb3img = document.getElementById("analyteimg3");
+  //var anlb3img = document.getElementById("analyteimg3");
   var anl1toppb = 29;
   var anl1leftpb = 56;
   var anl2toppb = 29;
   var anl2leftpb = 46;
-  var anl3toppb= 29;
-  var anl3leftpb = 36;
+  //var anl3toppb= 29;
+  //var anl3leftpb = 36;
 
   //
 
   imganlb1 = setInterval(frametopab, 50); /* frame is 50 denotes the speed of the movement*/
   imganlb2 = setInterval(frametopab2, 50);
-  imganlb3 = setInterval(frametopab3, 50);
+ // imganlb3 = setInterval(frametopab3, 50);
   
 
   function frametopab() {
-    console.log('frametopab called');
-    console.log('anl1toppb:', anl1toppb);
+   
 
     if (anl1toppb == 17) {
 
@@ -1060,8 +1059,7 @@ function buffercanvas3(){
   }
 
   function frameleftab() {
-    console.log('frameleftab called');
-    console.log('anl1leftpb:', anl1leftpb);
+   
 
 
     if (anl1leftpb == 95) {
@@ -1118,7 +1116,7 @@ function buffercanvas3(){
 
   /*3*/
 
-  function frametopab3() {
+ /* function frametopab3() {
    
     if (anl3toppb == 17) {
 
@@ -1153,7 +1151,7 @@ function buffercanvas3(){
     }
 
   }
-
+*/
 
 
 
@@ -1167,7 +1165,7 @@ canvasp3 = document.getElementById("bufferc3");
       function drawLinep3() {
 
 
-        ctxgp3.strokeStyle = '#89CFFF ';
+        ctxgp3.strokeStyle = '#DAE8FC ';
         ctxgp3.lineWidth = 600;
         ctxgp3.beginPath();
         ctxgp3.moveTo(posYp3, 0); /*  */
@@ -1209,7 +1207,7 @@ function buffercanvas4(){
         function drawLinep4() {
   
   
-          ctxgp4.strokeStyle = '#89CFFF ';
+          ctxgp4.strokeStyle = '#DAE8FC ';
           ctxgp4.lineWidth = 600;
           ctxgp4.beginPath();
           ctxgp4.moveTo(posYp4, 0); /*  */
@@ -1250,7 +1248,7 @@ function buffercanvas5(){
         function drawLinep5() {
   
   
-          ctxgp5.strokeStyle = '#89CFFF ';
+          ctxgp5.strokeStyle = '#DAE8FC ';
           ctxgp5.lineWidth = 600;
           ctxgp5.beginPath();
           ctxgp5.moveTo(posYp5, 0); /*  */

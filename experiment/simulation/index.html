@@ -349,7 +349,7 @@ Developer: Prakriti Dhang
 							<tr>
 								<td><button id="step7" type="button"
 										class="btn btn-violet border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer;" onclick="dataanalysis()" disabled>Data Analysis A </button>
+										style="cursor: pointer;" disabled >Data Analysis A </button>
 
 								</td>
 							</tr>
@@ -467,11 +467,13 @@ Developer: Prakriti Dhang
 		<div class="row">
 
 			<div class="col-md-6">
-
+				<div class="card card-body border border-1" id="chart1" style="display: none;">
+					<div id="chartContainer1" style="height: 500px; width: 100%;"></div>
+				</div>
 			</div>
 
 			<div class="col-md-6">
-				<div class="card card-body border border-1">
+				<div class="card card-body border border-1" id="chart2" style="display: none;">
 					<div id="chartContainer" style="height: 500px; width: 100%;"></div>
 				</div>
 			</div>

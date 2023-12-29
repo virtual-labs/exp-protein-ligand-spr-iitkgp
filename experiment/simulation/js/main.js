@@ -1279,13 +1279,40 @@ function buffercanvas5(){
 
 }
 
-function dataanalysis(){
-  window.scrollBy(0,900);
-  document.getElementById("step7").disabled = false;
-}
 
 
-window.onload = function () {
+
+/*window.onload = function () {
+
+  var chart = new CanvasJS.Chart("chartContainer1", {
+    animationEnabled: true,
+    title: {
+      text: "Surface plasmon resonance (SPR)"
+    },
+    axisY: {
+      title: "Response (μM)",
+      minimum: -10,
+      maximum: 80,
+      gridThickness: 0
+
+    },
+    axisX: {
+      title: "Time (s)",
+      minimum: 0,
+      maximum: 250,
+     
+
+    },
+
+    data: [{
+      type: "spline",
+
+      dataPoints: [
+
+      ]
+    }]
+  });
+  chart.render();
 
   var chart = new CanvasJS.Chart("chartContainer", {
     animationEnabled: true,
@@ -1319,5 +1346,4 @@ window.onload = function () {
   chart.render();
 
 
-
-}
+}*/

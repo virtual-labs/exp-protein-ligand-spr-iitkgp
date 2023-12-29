@@ -9,8 +9,9 @@ Developer: Prakriti Dhang */
 document.getElementById('step7').addEventListener('click', function () {
 	$('#alertModal').modal('show');
 	$('.modal-body').text('Surface Plasmon Resonance (SPR) has been considered for 2μM concentration of analyte');
-
-	//document.getElementById("step6").disabled = false;
+	window.scrollBy(0,900);
+	
+	document.getElementById("chart1").style.display="block";
 	const excelUrl = './plotdata/SPR_data_file.xlsx';
 
 	fetch(excelUrl)
@@ -33,20 +34,21 @@ document.getElementById('step7').addEventListener('click', function () {
 		
 			//const dataPoints = jsonData.map(row => ({ x: parseFloat(row[0]), y: parseFloat(row[4]) }));
 
-			const dataSets = [];
+			const dataSets1 = [];
 		
 			
 			for (let i = 1; i < jsonData[0].length; i++) {
-				const dataset = {
+				const dataset1 = {
 				  type: 'spline',
+				 color:'#51C6C8',
 				  name: `${jsonData[0][4]}μM`, // Assuming the first row contains column headers
 				  dataPoints: jsonData.slice(1).map(row => ({ x: parseFloat(row[0]), y: parseFloat(row[4]) }))
 				};
-				dataSets.push(dataset);
+				dataSets1.push(dataset1);
 			  }
 			
 			// Plot the data using CanvasJS with spline
-			plotData(dataSets);
+			plotData1(dataSets1);
 
 
 		})
@@ -58,8 +60,8 @@ document.getElementById('step7').addEventListener('click', function () {
 
 
 // Function to plot data using CanvasJS with spline
-function plotData(dataSets) {
-	const chart = new CanvasJS.Chart("chartContainer", {
+function plotData1(dataSets1) {
+	const chart = new CanvasJS.Chart("chartContainer1", {
 		animationEnabled: true,
 		title: {
 			text: "Response (2μM) Vs Time "
@@ -76,7 +78,7 @@ function plotData(dataSets) {
 
 		},
 
-		data: dataSets // <-- Correct placement
+		data: dataSets1 // <-- Correct placement
 
 			// Individual data points with correct syntax
 		

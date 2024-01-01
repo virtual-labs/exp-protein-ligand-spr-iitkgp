@@ -8,10 +8,10 @@ Developer: Prakriti Dhang */
 
 document.getElementById('step7').addEventListener('click', function () {
 	$('#alertModal').modal('show');
-	$('.modal-body').text('Surface Plasmon Resonance (SPR) has been considered for 2μM concentration of analyte');
-	window.scrollBy(0,900);
-	
-	document.getElementById("chart1").style.display="block";
+	$('.modal-body').text('Surface Plasmon Resonance (SPR) has been considered for 1μM concentration of analyte');
+	window.scrollBy(0, 900);
+
+	document.getElementById("chart1").style.display = "block";
 	const excelUrl = './plotdata/SPR_data_file.xlsx';
 
 	fetch(excelUrl)
@@ -31,22 +31,22 @@ document.getElementById('step7').addEventListener('click', function () {
 			// Convert worksheet to JSON
 			const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
 
-		
+
 			//const dataPoints = jsonData.map(row => ({ x: parseFloat(row[0]), y: parseFloat(row[4]) }));
 
 			const dataSets1 = [];
-		
-			
+
+
 			for (let i = 1; i < jsonData[0].length; i++) {
 				const dataset1 = {
-				  type: 'spline',
-				 color:'#51C6C8',
-				  name: `${jsonData[0][4]}μM`, // Assuming the first row contains column headers
-				  dataPoints: jsonData.slice(1).map(row => ({ x: parseFloat(row[0]), y: parseFloat(row[4]) }))
+					type: 'spline',
+					color: '#93CB62 ', /*51C6C8*/
+					name: `${jsonData[0][3]}μM`, // Assuming the first row contains column headers
+					dataPoints: jsonData.slice(1).map(row => ({ x: parseFloat(row[0]), y: parseFloat(row[3]) }))
 				};
 				dataSets1.push(dataset1);
-			  }
-			
+			}
+
 			// Plot the data using CanvasJS with spline
 			plotData1(dataSets1);
 
@@ -64,11 +64,12 @@ function plotData1(dataSets1) {
 	const chart = new CanvasJS.Chart("chartContainer1", {
 		animationEnabled: true,
 		title: {
-			text: "Response (2μM) Vs Time "
+			text: "Response (1μM) Vs Time "
 		},
 		axisY: {
-			title: "Response (2μM)",
-
+			title: "Response (1μM)",
+			minimun: -10,
+			maximum: 90,
 			gridThickness: 0
 
 		},
@@ -80,13 +81,13 @@ function plotData1(dataSets1) {
 
 		data: dataSets1 // <-- Correct placement
 
-			// Individual data points with correct syntax
-		
+		// Individual data points with correct syntax
+
 
 	});
 
 	chart.render();
-	
+
 }
 
 

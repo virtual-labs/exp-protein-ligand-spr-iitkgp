@@ -52,7 +52,7 @@ element1.addEventListener("click", toggleDoor);
 function toggleDoor() {
   console.log("Door toggled!");
   element2.classList.toggle("doorOpen1");
-  window.scrollBy(0, 900);
+  window.scrollBy(0, 1000);
 
 }
 
@@ -138,7 +138,7 @@ function prepedcnhs(){
     document.getElementById("step41").disabled = false;
     document.getElementById("step40").disabled = true;
     document.getElementById("stp4c").style.display = "block";
-    window.scrollBy(0, 500);
+    window.scrollBy(0, 900);
     document.getElementById("chk1").disabled = true;
     document.getElementById("chk2").disabled = true;
     document.getElementById("chk3").disabled = false;
@@ -162,7 +162,7 @@ function sampleprep() {
    // document.getElementById("stp4b").style.display = "block";
     document.getElementById("stp4c").style.display = "block";
     document.getElementById("stp4d").style.display = "block";
-    window.scrollBy(0, 500);
+    window.scrollBy(0, 900);
     
     document.getElementById("chk5").disabled = false;
   
@@ -189,7 +189,7 @@ function ethacheckbox(){
     document.getElementById("stp4c").style.display = "block";
     document.getElementById("stp4d").style.display = "block";
    
-    window.scrollBy(0, 500);
+    window.scrollBy(0, 900);
     document.getElementById("chk5").disabled = true;
     document.getElementById("stepopenstraydoor").disabled = false;
     $('#alertModal').modal('show');
@@ -331,7 +331,7 @@ function injectrack() {
 /*************************************************************** Ligand run *************************************************************************/
 
 function ligandrun() {
-  window.scrollBy(0, 900);
+  window.scrollBy(0, 950);
   document.getElementById("step43").disabled = true;
   document.getElementById('ligandimg1').style.display="block";
   document.getElementById('ligandimg2').style.display="block";
@@ -607,6 +607,8 @@ function ejectsampletray(){
 function removeedcnhssamples(){
   $('#alertModal').modal('show');
   $('.modal-body').text('EDC, NHS and Ethanolmine sample tubes are removed from the sample tray of SPR machine. ');
+  window.scrollBy(0, 900);
+
   document.getElementById("edcnhs").style.display="none";
   document.getElementById("etha").style.display="none";
   document.getElementById("chk51").disabled = false;

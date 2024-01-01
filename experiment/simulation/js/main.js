@@ -331,6 +331,8 @@ function injectrack() {
 /*************************************************************** Ligand run *************************************************************************/
 
 function ligandrun() {
+  $('#alertModal').modal('show');
+  $('.modal-body').text('The ligand is attached to the sensor chip surface. ');
   window.scrollBy(0, 950);
   document.getElementById("step43").disabled = true;
   document.getElementById('ligandimg1').style.display="block";
@@ -714,6 +716,8 @@ function injecttray() {
 
 
 function runinteraction() {
+  $('#alertModal').modal('show');
+  $('.modal-body').text('The analyte is injected over the sensor surface and binds to immobilized ligand ');
   window.scrollBy(0, 900);
   document.getElementById("step53").disabled = true;
   document.getElementById('analyteimg1').style.display="block";

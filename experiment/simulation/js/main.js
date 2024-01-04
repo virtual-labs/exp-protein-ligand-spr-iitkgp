@@ -139,7 +139,7 @@ else{
 
 /*******************************************************  Sample prep  EDC NHS**********************************************************************************/
 function prepedcnhs(){
-  window.scrollBy(0, 900);
+  //window.scrollBy(0, 900);
   if ((document.getElementById("chk1").checked) && (document.getElementById("chk2").checked)){
     document.getElementById("edcnhs").style.display = "block";
     document.getElementById("stp4a").style.display = "block";
@@ -165,7 +165,7 @@ function prepedcnhs(){
 
 /*******************************************************  Sample prep ligand sodium **********************************************************************************/
 function sampleprep() {
-  window.scrollBy(0, 900);
+ // window.scrollBy(0, 900);
   if ( (document.getElementById("chk3").checked) && (document.getElementById("chk4").checked)) {
    
     document.getElementById("sampletube").style.display = "block";
@@ -193,7 +193,7 @@ function sampleprep() {
 
 
 function ethacheckbox(){
-  window.scrollBy(0, 900);
+ // window.scrollBy(0, 900);
   if ((document.getElementById("chk5").checked) ){
     
     document.getElementById("etha").style.display = "block";
@@ -293,10 +293,10 @@ function sampletrayinsert() {
   sampletray.style.top = 85 + '%';
   sampletray.style.left = 23.8 + '%';
   sampletube.style.top = 87 + '%';
-  sampletube.style.left = 25.8 + '%';
+  sampletube.style.left = 30.5 + '%';
 
   sampletubeedc.style.top = 87 + '%';
-  sampletubeedc.style.left = 30.5 + '%';
+  sampletubeedc.style.left = 25.8 + '%';
 
   sampletubeetha.style.top = 87 + '%';
   sampletubeetha.style.left = 35.2 + '%';

@@ -45,6 +45,7 @@ Developer: Prakriti Dhang*/
     left:38%;
     width: 12%;
     height:12%;
+    cursor: pointer;
 }
 
 
@@ -80,6 +81,7 @@ Developer: Prakriti Dhang*/
     width: 20%;
     height:21%;
     z-index: 4;
+    cursor: pointer;
   }
 
   .sdoor
@@ -184,7 +186,7 @@ Developer: Prakriti Dhang*/
     top:1%;
     left:1%; 
     width: 25%;
-    cursor: pointer;
+  
     display: none;
 }
 #stp4b{
@@ -200,7 +202,7 @@ Developer: Prakriti Dhang*/
     top:5%;
     left:33%; 
     width: 25%;
-    cursor: pointer;
+   
     display: none;
 }
 #stp4d{
@@ -208,7 +210,7 @@ Developer: Prakriti Dhang*/
     top:1%;
     left:68%;  
     width:29%;
-    cursor: pointer;
+  
     display: none;
 }
 

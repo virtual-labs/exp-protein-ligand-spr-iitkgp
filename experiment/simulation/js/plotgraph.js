@@ -7,11 +7,12 @@ Developer: Prakriti Dhang */
 
 
 document.getElementById('step7').addEventListener('click', function () {
-	$('#alertModal').modal('show');
-	$('.modal-body').text('Surface Plasmon Resonance (SPR) has been considered for 1μM concentration of analyte');
+	
 	window.scrollBy(0, 900);
 
 	document.getElementById("chart1").style.display = "block";
+	$('#alertModal').modal('show');
+	$('.modal-body').text('Surface Plasmon Resonance (SPR) has been considered for 1μM concentration of analyte');
 	const excelUrl = './plotdata/SPR_data_file.xlsx';
 
 	fetch(excelUrl)

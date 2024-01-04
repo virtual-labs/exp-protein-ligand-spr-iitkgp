@@ -72,6 +72,7 @@ function openschipdoor() {
     document.getElementById("chk32").disabled = false;
     document.getElementById("chk33").disabled = false;
     document.getElementById("chk34").disabled = false;
+    document.getElementById("step3").disabled = false;
   }
 }
 
@@ -87,7 +88,7 @@ function insertchip() {
   function frame() {
     if (schipleftp == 37) {
 
-      document.getElementById("step3").disabled = false;
+     
       document.getElementById("stepopenschipdoor").disabled = false;
       sensorchipimg.removeAttribute("onclick", "insertchip()");
 
@@ -138,12 +139,12 @@ function prepedcnhs(){
     document.getElementById("step41").disabled = false;
     document.getElementById("step40").disabled = true;
     document.getElementById("stp4c").style.display = "block";
-    window.scrollBy(0, 900);
+    
     document.getElementById("chk1").disabled = true;
     document.getElementById("chk2").disabled = true;
     document.getElementById("chk3").disabled = false;
     document.getElementById("chk4").disabled = false;
-   
+    window.scrollBy(0, 900);
     $('#alertModal').modal('show');
   $('.modal-body').text('The sample is placed in the sample tray ');
   }
@@ -157,12 +158,13 @@ function prepedcnhs(){
 /*******************************************************  Sample prep ligand sodium **********************************************************************************/
 function sampleprep() {
   if ( (document.getElementById("chk3").checked) && (document.getElementById("chk4").checked)) {
+    window.scrollBy(0, 900);
     document.getElementById("sampletube").style.display = "block";
     document.getElementById("stp4a").style.display = "block";
    // document.getElementById("stp4b").style.display = "block";
     document.getElementById("stp4c").style.display = "block";
     document.getElementById("stp4d").style.display = "block";
-    window.scrollBy(0, 900);
+    
     
     document.getElementById("chk5").disabled = false;
   
@@ -183,13 +185,14 @@ function sampleprep() {
 
 function ethacheckbox(){
   if ((document.getElementById("chk5").checked) ){
+    window.scrollBy(0, 900);
     document.getElementById("etha").style.display = "block";
     document.getElementById("stp4a").style.display = "block";
   
     document.getElementById("stp4c").style.display = "block";
     document.getElementById("stp4d").style.display = "block";
    
-    window.scrollBy(0, 900);
+   
     document.getElementById("chk5").disabled = true;
     document.getElementById("stepopenstraydoor").disabled = false;
     $('#alertModal').modal('show');
@@ -333,7 +336,7 @@ function injectrack() {
 function ligandrun() {
   $('#alertModal').modal('show');
   $('.modal-body').text('The ligand is attached to the sensor chip surface. ');
-  window.scrollBy(0, 950);
+  
   document.getElementById("step43").disabled = true;
   document.getElementById('ligandimg1').style.display="block";
   document.getElementById('ligandimg2').style.display="block";
@@ -417,6 +420,7 @@ var imglg1 = null;
 var imglg2 = null;
 var imglg3 = null;
 function ligandmove() {
+  window.scrollBy(0, 950);
   document.getElementById('asso_disso').style.top= 34 + "%";
   document.getElementById('asso_disso').style.left= 61 + "%";
   document.getElementById('asso_disso').style.transform= "rotate(-50deg)"; 
@@ -607,8 +611,7 @@ function ejectsampletray(){
 }
 /**************************************************** Remove edc. nhs, ethanolmine ******************************************************************/
 function removeedcnhssamples(){
-  $('#alertModal').modal('show');
-  $('.modal-body').text('EDC, NHS and Ethanolmine sample tubes are removed from the sample tray of SPR machine. ');
+ 
   window.scrollBy(0, 900);
 
   document.getElementById("edcnhs").style.display="none";
@@ -618,6 +621,8 @@ function removeedcnhssamples(){
   document.getElementById("step51").disabled = false;
   document.getElementById("step521").disabled = true;
   document.getElementById("step50b").disabled = true;
+  $('#alertModal').modal('show');
+  $('.modal-body').text('EDC, NHS and Ethanolmine sample tubes are removed from the sample tray of SPR machine. ');
 
 }
 /**************************************************** Analyte sample prep ******************************************************************/
@@ -718,7 +723,7 @@ function injecttray() {
 function runinteraction() {
   $('#alertModal').modal('show');
   $('.modal-body').text('The analyte is injected over the sensor surface and binds to immobilized ligand ');
-  window.scrollBy(0, 900);
+  
   document.getElementById("step53").disabled = true;
   document.getElementById('analyteimg1').style.display="block";
   document.getElementById('analyteimg2').style.display="block";
@@ -804,6 +809,7 @@ var imganl1 = null;
 var imganl2 = null;
 var imganl3 = null;
 function samplemove() {
+  window.scrollBy(0, 900);
   document.getElementById("step54").disabled = false;
   document.getElementById('asso_disso').style.display="block";
   document.getElementById('asso_disso').style.top= 32 + "%";

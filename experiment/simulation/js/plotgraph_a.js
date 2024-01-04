@@ -7,10 +7,11 @@ Developer: Prakriti Dhang */
 
 
 document.getElementById('step8').addEventListener('click', function () {
-	$('#alertModal').modal('show');
-	$('.modal-body').text('Surface Plasmon Resonance (SPR) has been considered for four more (0μM, 0.5μM, 1μM, 2μM, 4μM) concentration  of analyte');
+	
     window.scrollBy(0,900);
 	document.getElementById("chart2").style.display="block";
+	$('#alertModal').modal('show');
+	$('.modal-body').text('Surface Plasmon Resonance (SPR) has been considered for four more (0μM, 0.5μM, 1μM, 2μM, 4μM) concentration  of analyte');
 	const excelUrl = './plotdata/SPR_data_file.xlsx';
 
 	fetch(excelUrl)

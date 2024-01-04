@@ -30,6 +30,7 @@ function cleanwithmilliq() {
 }
 
 function cancelmsg() {
+  window.scrollBy(0, 1000);
   document.getElementById("alertModal").style.display = "none";
   document.getElementById("alertModal").classList.remove("show");
 }
@@ -814,8 +815,8 @@ var imganl1 = null;
 var imganl2 = null;
 var imganl3 = null;
 function samplemove() {
-  $('#alertModal').modal('show');
-  $('.modal-body').text('The analyte is injected over the sensor surface and binds to immobilized ligand ');
+ /*  $('#alertModal').modal('show');
+  $('.modal-body').text('The analyte is injected over the sensor surface and binds to immobilized ligand '); */
   document.getElementById("step54").disabled = false;
   document.getElementById('asso_disso').style.display="block";
   document.getElementById('asso_disso').style.top= 32 + "%";

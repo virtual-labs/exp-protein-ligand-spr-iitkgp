@@ -132,6 +132,7 @@ else{
 
 /*******************************************************  Sample prep  EDC NHS**********************************************************************************/
 function prepedcnhs(){
+  window.scrollBy(0, 900);
   if ((document.getElementById("chk1").checked) && (document.getElementById("chk2").checked)){
     document.getElementById("edcnhs").style.display = "block";
     document.getElementById("stp4a").style.display = "block";
@@ -144,7 +145,7 @@ function prepedcnhs(){
     document.getElementById("chk2").disabled = true;
     document.getElementById("chk3").disabled = false;
     document.getElementById("chk4").disabled = false;
-    window.scrollBy(0, 900);
+   
     $('#alertModal').modal('show');
   $('.modal-body').text('The sample is placed in the sample tray ');
   }
@@ -157,8 +158,9 @@ function prepedcnhs(){
 
 /*******************************************************  Sample prep ligand sodium **********************************************************************************/
 function sampleprep() {
+  window.scrollBy(0, 900);
   if ( (document.getElementById("chk3").checked) && (document.getElementById("chk4").checked)) {
-    window.scrollBy(0, 900);
+   
     document.getElementById("sampletube").style.display = "block";
     document.getElementById("stp4a").style.display = "block";
    // document.getElementById("stp4b").style.display = "block";
@@ -184,8 +186,9 @@ function sampleprep() {
 
 
 function ethacheckbox(){
+  window.scrollBy(0, 900);
   if ((document.getElementById("chk5").checked) ){
-    window.scrollBy(0, 900);
+    
     document.getElementById("etha").style.display = "block";
     document.getElementById("stp4a").style.display = "block";
   
@@ -334,9 +337,8 @@ function injectrack() {
 /*************************************************************** Ligand run *************************************************************************/
 
 function ligandrun() {
-  $('#alertModal').modal('show');
-  $('.modal-body').text('The ligand is attached to the sensor chip surface. ');
-  
+ 
+  window.scrollBy(0, 950);
   document.getElementById("step43").disabled = true;
   document.getElementById('ligandimg1').style.display="block";
   document.getElementById('ligandimg2').style.display="block";
@@ -420,7 +422,9 @@ var imglg1 = null;
 var imglg2 = null;
 var imglg3 = null;
 function ligandmove() {
-  window.scrollBy(0, 950);
+ 
+  $('#alertModal').modal('show');
+  $('.modal-body').text('The ligand is attached to the sensor chip surface. ');
   document.getElementById('asso_disso').style.top= 34 + "%";
   document.getElementById('asso_disso').style.left= 61 + "%";
   document.getElementById('asso_disso').style.transform= "rotate(-50deg)"; 
@@ -810,7 +814,8 @@ var imganl1 = null;
 var imganl2 = null;
 var imganl3 = null;
 function samplemove() {
-  
+  $('#alertModal').modal('show');
+  $('.modal-body').text('The analyte is injected over the sensor surface and binds to immobilized ligand ');
   document.getElementById("step54").disabled = false;
   document.getElementById('asso_disso').style.display="block";
   document.getElementById('asso_disso').style.top= 32 + "%";
@@ -1293,7 +1298,12 @@ function buffercanvas5(){
 }
 
 
-
+function dataan1(){
+  window.scrollBy(0,900);
+}
+function dataan2(){
+  window.scrollBy(0,900);
+}
 
 /*window.onload = function () {
 

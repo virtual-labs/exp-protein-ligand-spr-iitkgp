@@ -721,8 +721,9 @@ function injecttray() {
 
 
 function runinteraction() {
-  $('#alertModal').modal('show');
-  $('.modal-body').text('The analyte is injected over the sensor surface and binds to immobilized ligand ');
+  window.scrollBy(0, 900);
+ /*  $('#alertModal').modal('show');
+  $('.modal-body').text('The analyte is injected over the sensor surface and binds to immobilized ligand '); */
   
   document.getElementById("step53").disabled = true;
   document.getElementById('analyteimg1').style.display="block";
@@ -809,7 +810,7 @@ var imganl1 = null;
 var imganl2 = null;
 var imganl3 = null;
 function samplemove() {
-  window.scrollBy(0, 900);
+  
   document.getElementById("step54").disabled = false;
   document.getElementById('asso_disso').style.display="block";
   document.getElementById('asso_disso').style.top= 32 + "%";

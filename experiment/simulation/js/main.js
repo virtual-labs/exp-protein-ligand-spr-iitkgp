@@ -1298,7 +1298,12 @@ function buffercanvas5(){
 }
 
 
-
+function dataan1(){
+  window.scrollBy(0,900);
+}
+function dataan2(){
+  window.scrollBy(0,900);
+}
 
 /*window.onload = function () {
 

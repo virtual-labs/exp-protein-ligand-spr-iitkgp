@@ -8,7 +8,7 @@ Developer: Prakriti Dhang */
 
 document.getElementById('step7').addEventListener('click', function () {
 	
-	window.scrollBy(0, 900);
+	
 
 	document.getElementById("chart1").style.display = "block";
 	$('#alertModal').modal('show');

@@ -10,12 +10,12 @@
 
 4.  Ligand Immobilization
 <div align="center">
-<img src="images/spr_labeled_1.png" class="img-fluid">
+<img src="images/spr1.png" class="img-fluid">
 </div>
 
 5. Interaction Analysis
 <div align="center">
-<img src="images/spr_labeled_2.png" class="img-fluid">
+<img src="images/spr2.png" class="img-fluid">
 </div>
 
 

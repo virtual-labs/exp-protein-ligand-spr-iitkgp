@@ -11,7 +11,7 @@ document.getElementById('step7').addEventListener('click', function () {
 	
 
 	document.getElementById("chart1").style.display = "block";
-	$('#alertModal').modal('show');
+	$('#alertModal1').modal('show');
 	$('.modal-body').text('Surface Plasmon Resonance (SPR) has been considered for 1μM concentration of analyte');
 	const excelUrl = './plotdata/SPR_data_file.xlsx';
 

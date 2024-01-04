@@ -30,9 +30,15 @@ function cleanwithmilliq() {
 }
 
 function cancelmsg() {
-  window.scrollBy(0, 1000);
+ 
   document.getElementById("alertModal").style.display = "none";
   document.getElementById("alertModal").classList.remove("show");
+}
+
+function cancelmsg1() {
+  window.scrollBy(0, 1000);
+  document.getElementById("alertModal1").style.display = "none";
+  document.getElementById("alertModal1").classList.remove("show");
 }
 
 
@@ -147,7 +153,7 @@ function prepedcnhs(){
     document.getElementById("chk3").disabled = false;
     document.getElementById("chk4").disabled = false;
    
-    $('#alertModal').modal('show');
+    $('#alertModal1').modal('show');
   $('.modal-body').text('The sample is placed in the sample tray ');
   }
   else {
@@ -174,7 +180,7 @@ function sampleprep() {
   document.getElementById("chk4").disabled = true;
   document.getElementById("chk3").disabled = true;
   document.getElementById("step41").disabled = true;
-  $('#alertModal').modal('show');
+  $('#alertModal1').modal('show');
   $('.modal-body').text('The sample is placed in the sample tray ');
 
   }
@@ -199,7 +205,7 @@ function ethacheckbox(){
    
     document.getElementById("chk5").disabled = true;
     document.getElementById("stepopenstraydoor").disabled = false;
-    $('#alertModal').modal('show');
+    $('#alertModal1').modal('show');
   $('.modal-body').text('The sample is placed in the sample tray ');
   }
   else {
@@ -339,7 +345,7 @@ function injectrack() {
 
 function ligandrun() {
  
-  window.scrollBy(0, 950);
+  
   document.getElementById("step43").disabled = true;
   document.getElementById('ligandimg1').style.display="block";
   document.getElementById('ligandimg2').style.display="block";
@@ -415,7 +421,9 @@ function ligandrun() {
   }
 
   drawTriangle1();
-  ligandmove();
+ // ligandmove();
+ $('#alertModal2').modal('show');
+  $('.modal-body').text('The ligand is attached to the sensor chip surface. ');
 }
 
 
@@ -423,9 +431,10 @@ var imglg1 = null;
 var imglg2 = null;
 var imglg3 = null;
 function ligandmove() {
- 
-  $('#alertModal').modal('show');
-  $('.modal-body').text('The ligand is attached to the sensor chip surface. ');
+  window.scrollBy(0, 1000);
+  document.getElementById("alertModal2").style.display = "none";
+  document.getElementById("alertModal2").classList.remove("show");
+  
   document.getElementById('asso_disso').style.top= 34 + "%";
   document.getElementById('asso_disso').style.left= 61 + "%";
   document.getElementById('asso_disso').style.transform= "rotate(-50deg)"; 
@@ -617,7 +626,7 @@ function ejectsampletray(){
 /**************************************************** Remove edc. nhs, ethanolmine ******************************************************************/
 function removeedcnhssamples(){
  
-  window.scrollBy(0, 900);
+  //window.scrollBy(0, 900);
 
   document.getElementById("edcnhs").style.display="none";
   document.getElementById("etha").style.display="none";
@@ -626,7 +635,7 @@ function removeedcnhssamples(){
   document.getElementById("step51").disabled = false;
   document.getElementById("step521").disabled = true;
   document.getElementById("step50b").disabled = true;
-  $('#alertModal').modal('show');
+  $('#alertModal1').modal('show');
   $('.modal-body').text('EDC, NHS and Ethanolmine sample tubes are removed from the sample tray of SPR machine. ');
 
 }
@@ -726,9 +735,8 @@ function injecttray() {
 
 
 function runinteraction() {
-  window.scrollBy(0, 900);
- /*  $('#alertModal').modal('show');
-  $('.modal-body').text('The analyte is injected over the sensor surface and binds to immobilized ligand '); */
+  
+  
   
   document.getElementById("step53").disabled = true;
   document.getElementById('analyteimg1').style.display="block";
@@ -804,8 +812,9 @@ function runinteraction() {
 
   drawTriangle1();
 
-
-  samplemove();
+  $('#alertModal3').modal('show');
+  $('.modal-body').text('The analyte is injected over the sensor surface and binds to immobilized ligand '); 
+  //samplemove();
 
 
 }
@@ -815,8 +824,9 @@ var imganl1 = null;
 var imganl2 = null;
 var imganl3 = null;
 function samplemove() {
- /*  $('#alertModal').modal('show');
-  $('.modal-body').text('The analyte is injected over the sensor surface and binds to immobilized ligand '); */
+  window.scrollBy(0, 1000);
+  document.getElementById("alertModal3").style.display = "none";
+  document.getElementById("alertModal3").classList.remove("show");
   document.getElementById("step54").disabled = false;
   document.getElementById('asso_disso').style.display="block";
   document.getElementById('asso_disso').style.top= 32 + "%";

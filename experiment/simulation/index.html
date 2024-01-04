@@ -320,7 +320,8 @@ Developer: Prakriti Dhang
 								<td>
 									<button id="step53" type="button"
 										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="runinteraction()" disabled>Run SPR machine</button>
+										style="cursor: pointer; " onclick="runinteraction()" 
+										disabled>Run SPR machine</button>
 
 
 
@@ -349,7 +350,7 @@ Developer: Prakriti Dhang
 							<tr>
 								<td><button id="step7" type="button"
 										class="btn btn-violet border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer;"  onclick="dataan1()" disabled >Data Analysis A </button>
+										style="cursor: pointer;"  onclick="dataan1()"  disabled>Data Analysis A </button>
 
 								</td>
 							</tr>
@@ -523,8 +524,61 @@ Developer: Prakriti Dhang
 				</div>
 			</div>
 		</div>
+		<div class="modal" id="alertModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
 
+						<button type="button" class="btn btn-warning" onclick="cancelmsg1()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="alertModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
 
+						<button type="button" class="btn btn-warning" onclick="ligandmove()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="alertModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="samplemove()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 

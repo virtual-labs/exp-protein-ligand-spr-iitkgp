@@ -12,7 +12,7 @@
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+Surface plasmon resonance helps perform molecular interactions in real time. The studies can be used to observe if two or more interactants bind to each other. It can also be used to measure how strong the interactions are, and even to measure the actual association and dissociation rates, specificity, and affinity of the interactions.
 
 ### Subject Matter Experts
 

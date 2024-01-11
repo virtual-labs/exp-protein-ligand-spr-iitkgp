@@ -14,14 +14,16 @@ The surface is coated with a thin film of a noble metal, usually gold. Gold is u
 
 
 <div align="center">
-<img src="images/iitkgp.png" class="img-fluid">
+<img src="images/" class="img-fluid">
 <p>Figure 1: The principle of surface plasmon resonance for biomolecular binding detection</p>
 </div>
 
 In an SPR experiment, one molecule (the **Ligand**) is immobilized on a sensor chip and binding to a second molecule (the **Analyte**) is measured under flow.  Response is measured in resonance units (RU) and is proportional to the mass on the surface, and for any given interactant, the response is proportional to the number of molecules bound to the surface.  Response is recorded and displayed as a sensogram in real time.  
 
 #### **SPR principle components:**
+
 SPR instruments comprise three essential units integrated into one system: sensor surface, liquid handling (microfluidic) unit, and the optical unit.
+
 1. **Sensor chip:** At the core of SPR systems lies the sensor chip, which creates the physical conditions necessary to generate the SPR signal. The surface of the chip is where the interaction under scrutiny takes place. Typically, the sensor chip in SPR systems comprises a glass slide that is coated with a thin layer of gold. Additionally, to create a conducive environment for the molecular interactions being studied, a linker layer covers the gold surface, and on most sensor chip types, a modified dextran (a flexible unbranched carbohydrate polymer) matrix. The surface matrix determines the sensor chip's characteristics for ligand attachment and molecular interactions.
 Dextran-based surface matrices provide a hydrophilic environment for biomolecular interactions, enable efficient immobilization from dilute ligand solutions, increase the surface capacity for ligand immobilization, and extend the region where interactions occur to encompass a surface layer. Moreover, the flexibility of the unbranched polymer chains allows the "surface-attached" biomolecules to move with relative freedom within the surface layer, making dextran an excellent environment for many biomolecular interactions.
 Depending upon the properties and nature of biomolecules to be attached on the sensor chip surface, there are different approaches for ligand immobilization: 

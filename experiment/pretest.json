@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Surface plasmon resonance is used to study which type of molecular interactions?",
+      "question": "1. Surface plasmon resonance is used to study which type of molecular interactions?",
       "answers": {
         "a": "Protein-protein",
         "b": "Protein-DNA",
@@ -14,7 +14,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following materials is commonly used to coat the SPR sensor chip? ",
+      "question": "2. Which of the following materials is commonly used to coat the SPR sensor chip? ",
       "answers": {
         "a": "Silicon",
         "b": "Gold",
@@ -27,7 +27,7 @@
     },
     
     {
-      "question": "The detection unit of the SPR sensors detects which of the following parameters? ",
+      "question": "3. The detection unit of the SPR sensors detects which of the following parameters? ",
       "answers": {
         "a": "Conductivity",
         "b": "Absorbance",
@@ -39,7 +39,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "When there is an increase in the refractive index of the medium in contact to the metal surface, the SPR angle ",
+      "question": "4. When there is an increase in the refractive index of the medium in contact to the metal surface, the SPR angle ",
       "answers": {
         "a": "Remains constant",
         "b": "Increases",
@@ -51,7 +51,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The primary advantage of using SPR for protein-protein interaction is ",
+      "question": "5. The primary advantage of using SPR for protein-protein interaction is ",
       "answers": {
         "a": "High sensitivity",
         "b": "Real-time monitoring",
@@ -63,7 +63,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The RU in the SPR sensorgram stands for ",
+      "question": "6. The RU in the SPR sensorgram stands for ",
       "answers": {
         "a": "Resonance Unit",
         "b": "Response Unit",
@@ -75,7 +75,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which phase of the SPR experiment depicts the injection of an interacting molecule (analyte) over the immobilized ligand? ",
+      "question": "7. Which phase of the SPR experiment depicts the injection of an interacting molecule (analyte) over the immobilized ligand? ",
       "answers": {
         "a": "Association phase",
         "b": "Equilibration phase",
@@ -87,7 +87,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The binding kinetics between two proteins depends on which of the following parameters? ",
+      "question": "8. The binding kinetics between two proteins depends on which of the following parameters? ",
       "answers": {
         "a": "Changes in absorbance",
         "b": "Changes in mass",
@@ -99,7 +99,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "What is the relation between the dissociation constant (KD) and binding affinity between two interacting proteins? ",
+      "question": "9. What is the relation between the dissociation constant (KD) and binding affinity between two interacting proteins? ",
       "answers": {
         "a": "Inversely proportional",
         "b": "Directly proportional",
@@ -111,7 +111,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Covalent immobilization of ligand on the sensor chip is achieved using ",
+      "question": "10. Covalent immobilization of ligand on the sensor chip is achieved using ",
       "answers": {
         "a": "Amine",
         "b": "Aldehyde coupling",

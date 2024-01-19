@@ -88,9 +88,9 @@ function plotData1(dataSets1) {
 	});
 
 	chart.render();
-	document.getElementById("exportChart").addEventListener("click",function(){
-    	chart.exportChart({format: "jpg"});
-    });
+	//document.getElementById("exportChart").addEventListener("click",function(){
+    	//chart.exportChart({format: "jpg"});
+    //});
 }
 
 

@@ -99,12 +99,12 @@ Surface Plasmon Resonance (SPR) is a potent analytical technique utilized in var
   
     1. Surface Plasmon Resonance (SPR) has been considered for 1μM concentration of analyte
 
-<img src="images/Chart.jpg" class="img-fluid">
+<img src="images/Chart1.jpg" class="img-fluid">
 
 
    2. Surface Plasmon Resonance (SPR) has been considered for four more (0μM, 0.5μM, 1μM, 2μM, 4μM) concentration  of analyte
 
-<img src="images/Chart_mul.jpg" class="img-fluid">
+<img src="images/Chart2.jpg" class="img-fluid">
 
 
 

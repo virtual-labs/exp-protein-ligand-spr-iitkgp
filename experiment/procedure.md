@@ -8,7 +8,7 @@ Switch on the machine. Attach a sensor chip to the instrument. Prime the system 
 
 2. **Starting the experiment**
 
-     1. Ligand immobilization:
+    1. Ligand immobilization:
 The goal of immobilization is to attach an interactant to a sensor surface, either permanently through covalent bonds or temporarily using capturing techniques. Before ligand immobilizations, certain factors should be considered:
     - Amount of ligand to be immobilized
     -  Type of sensor chip
@@ -74,35 +74,38 @@ Surface Plasmon Resonance (SPR) is a potent analytical technique utilized in var
 1. Priming the system, Clean with MilliQ 
 
 2.  Dock the SPR sensor chip
-<div align="center">
+
 <img src="images/sensor_chip.png" class="img-fluid">
-</div>
+
 
 3. Prime with buffer
 
 4.  Ligand Immobilization
-<div align="center">
+
 <img src="images/spr1.png" class="img-fluid">
-</div>
+
 
 5. Interaction Analysis
-<div align="center">
+
 <img src="images/spr2.png" class="img-fluid">
-</div>
 
 
-<div align="center">
+
+
 <img src="images/interaction.png" class="img-fluid">
-</div>
+
 
 6. Data analysis
   
     1. Surface Plasmon Resonance (SPR) has been considered for 1μM concentration of analyte
-<div align="center">
+
 <img src="images/Chart.jpg" class="img-fluid">
-</div>
+
 
    2. Surface Plasmon Resonance (SPR) has been considered for four more (0μM, 0.5μM, 1μM, 2μM, 4μM) concentration  of analyte
-<div align="center">
+
 <img src="images/Chart_mul.jpg" class="img-fluid">
-</div>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

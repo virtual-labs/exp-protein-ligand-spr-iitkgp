@@ -65,10 +65,10 @@ function plotData1(dataSets1) {
 	const chart = new CanvasJS.Chart("chartContainer1", {
 		animationEnabled: true,
 		title: {
-			text: "Response (1μM) Vs Time "
+			text: "Response Vs Time "
 		},
 		axisY: {
-			title: "Response (1μM)",
+			title: "Response (RU)",
 			minimun: -10,
 			maximum: 90,
 			gridThickness: 0

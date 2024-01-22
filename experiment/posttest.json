@@ -74,12 +74,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "7. The equilibrium dissociation constant (KD) in SPR is calculated as the ratio of the dissociation rate constant (kd) to the association rate constant (ka). Mathematically, it is represented as: KD=kd/ka If ka=2.5  U+00d7 10<sub>4</sub>M<sub>-1</sub>s<sub>-1</sub> and kd=1.0  U+00d7 10<sub>U+2212 2</sub>M<sub>-1</sub>, what is the KD value? ",
+      "question": "7. The equilibrium dissociation constant (KD) in SPR is calculated as the ratio of the dissociation rate constant (kd) to the association rate constant (ka). Mathematically, it is represented as: KD=kd/ka If ka=2.5  x 10<sub>4</sub>M<sub>-1</sub>s<sub>-1</sub> and kd=1.0  x 10<sub>- 2</sub>M<sub>-1</sub>, what is the KD value? ",
       "answers": {
-        "a": "4.0 U+00d7 10 <sub>-7</sub>M ",
-        "b": "4.0 U+00d7 10 <sub>-2</sub>M",
-        "c": "2.5 U+00d7 10 <sub>6</sub>M",
-        "d": "2.5 U+00d7 10 <sub>-6</sub>M"
+        "a": "4.0 x 10 <sub>-7</sub>M ",
+        "b": "4.0 x 10 <sub>-2</sub>M",
+        "c": "2.5 x 10 <sub>6</sub>M",
+        "d": "2.5 x 10 <sub>-6</sub>M"
       },
       
       "correctAnswer": "d",

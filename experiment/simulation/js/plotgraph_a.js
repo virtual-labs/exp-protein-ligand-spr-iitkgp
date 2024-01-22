@@ -62,7 +62,7 @@ function plotData(dataSets) {
 			text: "Response Vs Time"
 		},
 		axisY: {
-			title: "Response (μM)",
+			title: "Response (RU)",
 
 			gridThickness: 0
 

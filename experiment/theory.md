@@ -14,8 +14,8 @@ The surface is coated with a thin film of a noble metal, usually gold. Gold is u
 
 
 <div align="center">
-<img src="images/" class="img-fluid">
-<p>Figure 1: The principle of surface plasmon resonance for biomolecular binding detection</p>
+<img src="images/spr1_theory.png" class="img-fluid">
+
 </div>
 
 In an SPR experiment, one molecule (the **Ligand**) is immobilized on a sensor chip and binding to a second molecule (the **Analyte**) is measured under flow.  Response is measured in resonance units (RU) and is proportional to the mass on the surface, and for any given interactant, the response is proportional to the number of molecules bound to the surface.  Response is recorded and displayed as a sensogram in real time.  
@@ -30,6 +30,12 @@ Depending upon the properties and nature of biomolecules to be attached on the s
 
 - **Covalent immobilization:** Covalent coupling is the preferred immobilization method due to high coupling yields and stable covalent bonds between ligand and sensor chip coating. The carboxymethyl (CM) dextran on Sensor Chip CM5, other CM-series chips and Sensor Chip L1, as well as the carboxyl groups directly attached to the surface of Sensor Chip C1, provide a solid foundation for a range of covalent immobilization chemistries. 
 The three most common methods employed are **amine coupling, thiol coupling, and aldehyde coupling**. Amine coupling relies on the activation of the surface with 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide (EDC) and N-hydroxysuccinimide (NHS) to exploit primary amine groups on the ligand. Thiol coupling uses thiol-disulfide exchange between thiol groups and active disulfides introduced on either the ligand or the surface matrix. Aldehyde coupling employs the reaction between hydrazine or carbohydrazide groups introduced on the surface and aldehyde groups obtained by oxidation of carbohydrates in the ligand.
+
+
+<div align="center">
+<img src="images/spr2_theory.png" class="img-fluid">
+
+</div>
 
 - **High-affinity capture:** The molecule of interest is attached to another molecule through non-covalent interactions. This other molecule is usually attached to the sensor chip surface through covalent immobilization. 
 

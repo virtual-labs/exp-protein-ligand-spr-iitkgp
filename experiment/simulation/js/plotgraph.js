@@ -65,7 +65,8 @@ function plotData1(dataSets1) {
 	const chart = new CanvasJS.Chart("chartContainer1", {
 		animationEnabled: true,
 		title: {
-			text: "Response Vs Time "
+			text: "Response Vs Time ",
+			fontSize: 32
 		},
 		axisY: {
 			title: "Response (RU)",

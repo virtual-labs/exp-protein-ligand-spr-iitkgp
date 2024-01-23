@@ -59,8 +59,14 @@ function plotData(dataSets) {
 	const chart = new CanvasJS.Chart("chartContainer", {
 		animationEnabled: true,
 		title: {
-			text: "Response Vs Time"
+			text: "Response Vs Time",
+			fontSize: 32
 		},
+		subtitles: [{
+			text: "Concentration dependent binding",
+			fontWeight: "normal" 
+			
+		  }],
 		axisY: {
 			title: "Response (RU)",
 

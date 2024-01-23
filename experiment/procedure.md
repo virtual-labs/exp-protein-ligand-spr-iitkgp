@@ -109,4 +109,4 @@ Surface Plasmon Resonance (SPR) is a potent analytical technique utilized in var
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

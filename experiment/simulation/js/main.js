@@ -825,6 +825,7 @@ var imganl2 = null;
 var imganl3 = null;
 function samplemove() {
   window.scrollBy(0, 1000);
+  
   document.getElementById("alertModal3").style.display = "none";
   document.getElementById("alertModal3").classList.remove("show");
   document.getElementById("step54").disabled = false;
@@ -960,12 +961,15 @@ function samplemove() {
 var imganlb1 = null;
 var imganlb2 = null;
 var imganlb3 = null;
-function addbuffer(){
-  window.scrollBy(0, 500);
-  document.getElementById("step7").disabled = false;
-  document.getElementById("step8").disabled = false;
-  document.getElementById("step54").disabled = true;
+var canvasp1, canvasp2,canvasp3,canvasp4,canvasp5;
+var ctxgp1,ctxgp2,ctxgp3,ctxgp4,ctxgp5;
 
+function addbuffer(){
+  $('#alertModal1').modal('show');
+  $('.modal-body').text(' Buffer is injected to remove the analyte from the ligand'); 
+  
+  document.getElementById("step54").disabled = true;
+document.getElementById("chkgly").disabled = false;
 /** canvas 1**/
 canvasp1 = document.getElementById("bufferc1");
       ctxgp1 = canvasp1.getContext("2d");
@@ -977,7 +981,7 @@ canvasp1 = document.getElementById("bufferc1");
       function drawLinep1() {
 
 
-        ctxgp1.strokeStyle = '#DAE8FC';
+        ctxgp1.strokeStyle = '#E5FAFE';
         ctxgp1.lineWidth = 600;
         ctxgp1.beginPath();
         ctxgp1.moveTo(posYp1, 0); /*  */
@@ -1016,7 +1020,7 @@ canvasp2 = document.getElementById("bufferc2");
       function drawLinep2() {
 
 
-        ctxgp2.strokeStyle = '#DAE8FC ';
+        ctxgp2.strokeStyle = '#E5FAFE ';
         ctxgp2.lineWidth = 600;
         ctxgp2.beginPath();
         ctxgp2.moveTo(posYp2, 0); /*  */
@@ -1194,7 +1198,7 @@ canvasp3 = document.getElementById("bufferc3");
       function drawLinep3() {
 
 
-        ctxgp3.strokeStyle = '#DAE8FC ';
+        ctxgp3.strokeStyle = '#E5FAFE ';
         ctxgp3.lineWidth = 600;
         ctxgp3.beginPath();
         ctxgp3.moveTo(posYp3, 0); /*  */
@@ -1236,7 +1240,7 @@ function buffercanvas4(){
         function drawLinep4() {
   
   
-          ctxgp4.strokeStyle = '#DAE8FC ';
+          ctxgp4.strokeStyle = '#E5FAFE ';
           ctxgp4.lineWidth = 600;
           ctxgp4.beginPath();
           ctxgp4.moveTo(posYp4, 0); /*  */
@@ -1277,7 +1281,7 @@ function buffercanvas5(){
         function drawLinep5() {
   
   
-          ctxgp5.strokeStyle = '#DAE8FC ';
+          ctxgp5.strokeStyle = '#E5FAFE';
           ctxgp5.lineWidth = 600;
           ctxgp5.beginPath();
           ctxgp5.moveTo(posYp5, 0); /*  */
@@ -1308,6 +1312,267 @@ function buffercanvas5(){
 
 }
 
+function glycinecheckbox(){
+  clearInterval(clearcanvas3);
+  ctxgp1.clearRect(0,0,canvasp1.width, canvasp1.height);
+  ctxgp2.clearRect(0,0,canvasp2.width, canvasp2.height);
+  ctxgp3.clearRect(0,0,canvasp3.width, canvasp4.height);
+  ctxgp4.clearRect(0,0,canvasp4.width, canvasp4.height);
+  ctxgp5.clearRect(0,0,canvasp5.width, canvasp5.height);
+
+/** canvas 1**/
+var canvasp1g = document.getElementById("bufferc1");
+   var ctxgp1g = canvasp1g.getContext("2d");
+      var posYp1 = 0;
+      var speedp1 = 0.2;
+
+
+
+      function drawLinep1() {
+
+
+        ctxgp1g.strokeStyle = '#E5FAFE';
+        ctxgp1g.lineWidth = 600;
+        ctxgp1g.beginPath();
+        ctxgp1g.moveTo(posYp1, 0); /*  */
+        ctxgp1g.lineTo(0, 0);
+        ctxgp1g.stroke();
+      }
+
+      function moveLinep1() {
+        posYp1 += speedp1;
+
+        if (posYp1 < 0 || posYp1 > canvasp1g.height) {
+          speedp1 = speedp1 * -1;
+        }
+      }
+
+      function loopp1() {
+        // clear old frame;
+        //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
+        moveLinep1();
+        drawLinep1();
+        cancelani = requestAnimationFrame(loopp1);
+      }
+      requestAnimationFrame(loopp1);
+
+setInterval(buffercanvas2, 650);
+
+function buffercanvas2(){
+/** canvas 2**/
+canvasp2 = document.getElementById("bufferc2");
+      ctxgp2 = canvasp2.getContext("2d");
+      var posYp2 = 0;
+      var speedp2 = 0.2;
+
+
+
+      function drawLinep2() {
+
+
+        ctxgp2.strokeStyle = '#E5FAFE ';
+        ctxgp2.lineWidth = 600;
+        ctxgp2.beginPath();
+        ctxgp2.moveTo(posYp2, 0); /*  */
+        ctxgp2.lineTo(0, 0);
+        ctxgp2.stroke();
+      }
+
+      function moveLinep2() {
+        posYp2 += speedp2;
+
+        if (posYp2 < 0 || posYp2 > canvasp2.height) {
+          speedp2 = speedp2 * -1;
+        }
+      }
+
+      function loopp2() {
+        // clear old frame;
+        //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
+        moveLinep2();
+        drawLinep2();
+        cancelani = requestAnimationFrame(loopp2);
+      }
+      requestAnimationFrame(loopp2);
+
+      clearcanvas3= setInterval(buffercanvas3, 650);
+
+    }
+
+    function buffercanvas3(){
+      clearInterval(clearcanvas3);
+      var anlb3img = document.getElementById("analyteimg3");
+var anl3toppb= 29;
+  var anl3leftpb = 36;
+  imganlb3 = setInterval(frametopab3, 50);
+/*3*/
+
+  function frametopab3() {
+   
+    if (anl3toppb == 17) {
+
+      clearInterval(imganlb3);
+      imganlb3 = setInterval(frameleftab3, 50);
+
+    } else {
+
+
+      anl3toppb--;
+
+      anlb3img.style.top = anl3toppb + '%';
+
+    }
+
+  }
+
+  function frameleftab3() {
+
+    if (anl3leftpb == 95) {
+
+      clearInterval(imganlb3);
+      document.getElementById("analyteimg3").style.display="none";
+ 
+    } else {
+
+
+      anl3leftpb++;
+
+      anlb3img.style.left = anl3leftpb + '%';
+
+    }
+
+  }
+
+
+
+
+
+
+      canvasp3 = document.getElementById("bufferc3");
+      ctxgp3 = canvasp3.getContext("2d");
+      var posYp3 = 0;
+      var speedp3 = 0.2;
+
+
+
+      function drawLinep3() {
+
+
+        ctxgp3.strokeStyle = '#E5FAFE ';
+        ctxgp3.lineWidth = 600;
+        ctxgp3.beginPath();
+        ctxgp3.moveTo(posYp3, 0); /*  */
+        ctxgp3.lineTo(0, 0);
+        ctxgp3.stroke();
+      }
+
+      function moveLinep3() {
+        posYp3 += speedp3;
+
+        if (posYp3 < 0 || posYp3 > canvasp3.height) {
+          speedp3 = speedp3 * -1;
+        }
+      }
+
+      function loopp3() {
+        // clear old frame;
+        //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
+        moveLinep3();
+        drawLinep3();
+        cancelani = requestAnimationFrame(loopp3);
+      }
+      requestAnimationFrame(loopp3);
+      
+      setInterval(buffercanvas4, 650);
+}
+
+
+
+/** canvas 4**/
+function buffercanvas4(){
+  canvasp4 = document.getElementById("bufferc4");
+        ctxgp4 = canvasp4.getContext("2d");
+        var posYp4 = 0;
+        var speedp4 = 0.2;
+  
+  
+  
+        function drawLinep4() {
+  
+  
+          ctxgp4.strokeStyle = '#E5FAFE ';
+          ctxgp4.lineWidth = 600;
+          ctxgp4.beginPath();
+          ctxgp4.moveTo(posYp4, 0); /*  */
+          ctxgp4.lineTo(0, 0);
+          ctxgp4.stroke();
+        }
+  
+        function moveLinep4() {
+          posYp4 += speedp4;
+  
+          if (posYp4 < 0 || posYp4 > canvasp4.height) {
+            speedp4 = speedp4 * -1;
+          }
+        }
+  
+        function loopp4() {
+          // clear old frame;
+          //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
+          moveLinep4();
+          drawLinep4();
+          cancelani = requestAnimationFrame(loopp4);
+        }
+        requestAnimationFrame(loopp4);
+        setInterval(buffercanvas5, 650);
+  }
+
+
+
+  /** canvas 5**/
+function buffercanvas5(){
+  canvasp5 = document.getElementById("bufferc5");
+        ctxgp5 = canvasp5.getContext("2d");
+        var posYp5 = 0;
+        var speedp5 = 0.2;
+  
+  
+  
+        function drawLinep5() {
+  
+  
+          ctxgp5.strokeStyle = '#E5FAFE ';
+          ctxgp5.lineWidth = 600;
+          ctxgp5.beginPath();
+          ctxgp5.moveTo(posYp5, 0); /*  */
+          ctxgp5.lineTo(0, 0);
+          ctxgp5.stroke();
+        }
+  
+        function moveLinep5() {
+          posYp5 += speedp5;
+  
+          if (posYp5 < 0 || posYp5 > canvasp5.height) {
+            speedp5 = speedp5 * -1;
+          }
+        }
+  
+        function loopp5() {
+          // clear old frame;
+          //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
+          moveLinep5();
+          drawLinep5();
+          cancelani = requestAnimationFrame(loopp5);
+        }
+        requestAnimationFrame(loopp5);
+        document.getElementById("step7").disabled = false;
+        document.getElementById("step8").disabled = false;
+  
+  }
+
+
+
+}
 
 function dataan1(){
   window.scrollBy(0,900);
@@ -1315,6 +1580,8 @@ function dataan1(){
 function dataan2(){
   window.scrollBy(0,900);
 }
+
+
 
 /*window.onload = function () {
 

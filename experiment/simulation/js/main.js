@@ -1006,7 +1006,7 @@ canvasp1 = document.getElementById("bufferc1");
       }
       requestAnimationFrame(loopp1);
 
-setInterval(buffercanvas2, 650);
+      clearcanvas2= setInterval(buffercanvas2, 650);
 
 function buffercanvas2(){
 /** canvas 2**/
@@ -1223,7 +1223,7 @@ canvasp3 = document.getElementById("bufferc3");
       }
       requestAnimationFrame(loopp3);
       
-      setInterval(buffercanvas4, 650);
+      clearcanvas4=   setInterval(buffercanvas4, 650);
 }
 
 
@@ -1264,7 +1264,7 @@ function buffercanvas4(){
           cancelani = requestAnimationFrame(loopp4);
         }
         requestAnimationFrame(loopp4);
-        setInterval(buffercanvas5, 650);
+        clearcanvas5 =setInterval(buffercanvas5, 650);
   }
 
 
@@ -1305,7 +1305,13 @@ function buffercanvas5(){
           cancelani = requestAnimationFrame(loopp5);
         }
         requestAnimationFrame(loopp5);
-  
+
+       
+       
+        
+       
+
+
   }
 
 
@@ -1313,12 +1319,8 @@ function buffercanvas5(){
 }
 
 function glycinecheckbox(){
-  clearInterval(clearcanvas3);
-  ctxgp1.clearRect(0,0,canvasp1.width, canvasp1.height);
-  ctxgp2.clearRect(0,0,canvasp2.width, canvasp2.height);
-  ctxgp3.clearRect(0,0,canvasp3.width, canvasp4.height);
-  ctxgp4.clearRect(0,0,canvasp4.width, canvasp4.height);
-  ctxgp5.clearRect(0,0,canvasp5.width, canvasp5.height);
+  
+  
 
 /** canvas 1**/
 var canvasp1g = document.getElementById("bufferc1");

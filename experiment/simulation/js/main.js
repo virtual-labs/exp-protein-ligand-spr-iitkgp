@@ -831,11 +831,7 @@ function runinteraction() {
   
   
   document.getElementById("step53").disabled = true;
-  document.getElementById('analyteimg1').style.display="block";
-  document.getElementById('analyteimg2').style.display="block";
-  document.getElementById('analyteimg3').style.display="block";
-  document.getElementById('analyteimg4').style.display="block";
-  document.getElementById('analyteimg5').style.display="block";
+  
 
   const canvas = document.getElementById('triangleCanvas');
   const ctx = canvas.getContext('2d');
@@ -921,6 +917,11 @@ var imganl4 = null;
 var imganl5 = null;
 
 function samplemove() {
+  document.getElementById('analyteimg1').style.display="block";
+  document.getElementById('analyteimg2').style.display="block";
+  document.getElementById('analyteimg3').style.display="block";
+  document.getElementById('analyteimg4').style.display="block";
+  document.getElementById('analyteimg5').style.display="block";
   window.scrollBy(0, 1000);
   
   document.getElementById("alertModal3").style.display = "none";

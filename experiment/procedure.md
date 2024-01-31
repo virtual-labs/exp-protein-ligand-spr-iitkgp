@@ -8,7 +8,7 @@ Switch on the machine. Attach a sensor chip to the instrument. Prime the system 
 
 2. **Starting the experiment**
 
-    1. Ligand immobilization:
+      1. Ligand immobilization:
 The goal of immobilization is to attach an interactant to a sensor surface, either permanently through covalent bonds or temporarily using capturing techniques. Before ligand immobilizations, certain factors should be considered:
     - Amount of ligand to be immobilized
     -  Type of sensor chip
@@ -36,12 +36,12 @@ In a reversible interaction between two molecules, the analyte (A) binds to the 
 A  +   B    ⇌   AB 
 
 The equation for the rate of a chemical reaction is given by:  
-Rate = ka . [A] x [B] - k<sub>d</sub> . [AB]   
-where, ka is the rate constant for the association of reactants A and B to form product AB (association rate constant),  
-and kd is the rate constant for the dissociation of product AB back into reactants A and B (dissociation rate constant).   
+Rate = k<sub>a</sub> . [A] x [B] - k<sub>d</sub> . [AB]   
+where, k<sub>a</sub> is the rate constant for the association of reactants A and B to form product AB (association rate constant),  
+and k<sub>d</sub> is the rate constant for the dissociation of product AB back into reactants A and B (dissociation rate constant).   
 The equilibrium dissociation constant (KD), which is measured in Molar, is defined by the quotient of : $$  K_D   =     \frac{k_d}{k_a}           $$ 
 This constant provides the analyte concentration that is required to saturate 50% of the ligand.  
-SPR experiments can be used to measure kinetic binding constants (ka, kd) and equilibrium binding constants (affinity, K<sub>a</sub> = 1/K<sub>d</sub>).  
+SPR experiments can be used to measure kinetic binding constants (k<sub>a</sub>, k<sub>d</sub>) and equilibrium binding constants (affinity, K<sub>a</sub> = 1/K<sub>d</sub>).  
 
 c. **Steady state:** When injection time is sufficient, the curve levels out, showing equal association and dissociation events. Req (response at equilibrium) depends on ligand binding sites, analyte concentration, and dissociation constant. The following equations can be used  to calculate Req.
 

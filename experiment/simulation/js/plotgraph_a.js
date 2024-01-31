@@ -61,6 +61,7 @@ function plotData(dataSets) {
 		title: {
 			text: "Response Vs Time",
 			fontSize: 32
+			
 		},
 		subtitles: [{
 			text: "Concentration dependent binding",

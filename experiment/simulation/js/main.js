@@ -154,7 +154,7 @@ function prepedcnhs(){
     document.getElementById("chk4").disabled = false;
    
     $('#alertModal1').modal('show');
-  $('.modal-body').text('The sample is placed in the sample tray ');
+  $('.modal-body').html('The sample is placed in the sample tray. <br> The activiation of the surface  by morification of carboxymethyl groups is achieved.');
   }
   else {
     $('#alertModal').modal('show');
@@ -206,7 +206,7 @@ function ethacheckbox(){
     document.getElementById("chk5").disabled = true;
     document.getElementById("stepopenstraydoor").disabled = false;
     $('#alertModal1').modal('show');
-  $('.modal-body').text('The sample is placed in the sample tray ');
+  $('.modal-body').html('The sample is placed in the sample tray. <br> The surface is deactivated to prevent non specific interaction. ');
   }
   else {
     $('#alertModal').modal('show');
@@ -350,6 +350,8 @@ function ligandrun() {
   document.getElementById('ligandimg1').style.display="block";
   document.getElementById('ligandimg2').style.display="block";
   document.getElementById('ligandimg3').style.display="block";
+  document.getElementById('ligandimg4').style.display="block";
+  document.getElementById('ligandimg5').style.display="block";
   document.getElementById('asso_disso').style.display="block";
   
 
@@ -430,6 +432,8 @@ function ligandrun() {
 var imglg1 = null;
 var imglg2 = null;
 var imglg3 = null;
+var imglg4 = null;
+var imglg5 = null;
 function ligandmove() {
   window.scrollBy(0, 1000);
   document.getElementById("alertModal2").style.display = "none";
@@ -441,23 +445,31 @@ function ligandmove() {
   lg1img = document.getElementById("ligandimg1");
   lg2img = document.getElementById("ligandimg2");
   lg3img = document.getElementById("ligandimg3");
+  lg4img = document.getElementById("ligandimg4");
+  lg5img = document.getElementById("ligandimg5");
   var lg1topp1 = 15;
   var lg1leftp1 = 5;
   var lg2topp = 15;
   var lg2leftp = 5;
   var lg3topp = 15;
   var lg3leftp = 5;
+  var lg4topp = 15;
+  var lg4leftp = 5;
+  var lg5topp = 15;
+  var lg5leftp = 5;
 
   clearInterval(imglg1);
   clearInterval(imglg2);
   clearInterval(imglg3);
 
-  imglg1 = setInterval(frame, 50); /* frame is 40 denotes the speed of the movement*/
+  imglg1 = setInterval(frame, 50); /* frame is 50 denotes the speed of the movement*/
   imglg2 = setInterval(frame2, 50);
   imglg3 = setInterval(frame3, 50);
+  imglg4 = setInterval(frame4, 50);
+  imglg5 = setInterval(frame5, 50);
   function frame() {
 
-    if ((lg1leftp1 == 55)) {
+    if ((lg1leftp1 == 58)) {
 
       clearInterval(imglg1);
       imglg1 = setInterval(frametop, 50);
@@ -493,7 +505,7 @@ function ligandmove() {
   /**/
   function frame2() {
 
-    if ((lg2leftp == 45)) {
+    if ((lg2leftp == 46)) {
 
       clearInterval(imglg2);
       imglg2 = setInterval(frametop2, 50);
@@ -533,7 +545,7 @@ function ligandmove() {
 
   function frame3() {
 
-    if ((lg3leftp == 35)) {
+    if ((lg3leftp == 34)) {
 
       clearInterval(imglg3);
       imglg3 = setInterval(frametop3, 50);
@@ -555,7 +567,7 @@ function ligandmove() {
     if ((lg3topp == 32)) {
 
       clearInterval(imglg3);
-      document.getElementById("stepopenstraydoor1").disabled = false;
+     
 
     } else {
 
@@ -563,6 +575,86 @@ function ligandmove() {
       lg3topp++;
 
       lg3img.style.top = lg3topp + '%';
+
+
+    }
+
+  }
+
+  /* 4 */
+
+  function frame4() {
+
+    if ((lg4leftp == 40)) {
+
+      clearInterval(imglg4);
+      imglg4 = setInterval(frametop4, 50);
+
+    } else {
+
+
+      lg4leftp++;
+
+      lg4img.style.left = lg4leftp + '%';
+
+
+    }
+
+  }
+
+  function frametop4() {
+
+    if ((lg4topp == 32)) {
+
+      clearInterval(imglg4);
+      
+
+    } else {
+
+
+      lg4topp++;
+
+      lg4img.style.top = lg4topp + '%';
+
+
+    }
+
+  }
+
+  /* 5 */
+
+  function frame5() {
+
+    if ((lg5leftp == 52)) {
+
+      clearInterval(imglg5);
+      imglg5 = setInterval(frametop5, 50);
+
+    } else {
+
+
+      lg5leftp++;
+
+      lg5img.style.left = lg5leftp + '%';
+
+
+    }
+
+  }
+
+  function frametop5() {
+
+    if ((lg5topp == 32)) {
+
+      clearInterval(imglg5);
+      document.getElementById("stepopenstraydoor1").disabled = false;
+
+    } else {
+
+
+      lg5topp++;
+
+      lg5img.style.top = lg5topp + '%';
 
 
     }
@@ -742,6 +834,8 @@ function runinteraction() {
   document.getElementById('analyteimg1').style.display="block";
   document.getElementById('analyteimg2').style.display="block";
   document.getElementById('analyteimg3').style.display="block";
+  document.getElementById('analyteimg4').style.display="block";
+  document.getElementById('analyteimg5').style.display="block";
 
   const canvas = document.getElementById('triangleCanvas');
   const ctx = canvas.getContext('2d');
@@ -823,6 +917,9 @@ function runinteraction() {
 var imganl1 = null;
 var imganl2 = null;
 var imganl3 = null;
+var imganl4 = null;
+var imganl5 = null;
+
 function samplemove() {
   window.scrollBy(0, 1000);
   
@@ -836,21 +933,33 @@ function samplemove() {
   anl1img = document.getElementById("analyteimg1");
   anl2img = document.getElementById("analyteimg2");
   anl3img = document.getElementById("analyteimg3");
+  anl4img = document.getElementById("analyteimg4");
+  anl5img = document.getElementById("analyteimg5");
+
+
   var anl1topp = 17;
   var anl1leftp = 5;
   var anl2topp = 17;
   var anl2leftp = 5;
   var anl3topp = 17;
   var anl3leftp = 5;
+  var anl4topp = 17;
+  var anl4leftp = 5;
+  var anl5topp = 17;
+  var anl5leftp = 5;
+
 
   clearInterval(imganl1);
 
   imganl1 = setInterval(framea, 50); /* frame is 50 denotes the speed of the movement*/
   imganl2 = setInterval(framea2, 50);
   imganl3 = setInterval(framea3, 50);
+  imganl4 = setInterval(framea4, 50);
+  imganl5 = setInterval(framea5, 50);
+  
   function framea() {
 
-    if (anl1leftp == 56) {
+    if (anl1leftp == 59) {
 
       clearInterval(imganl1);
       imganl1 = setInterval(frametopa, 50);
@@ -886,7 +995,7 @@ function samplemove() {
   /* */
   function framea2() {
 
-    if (anl2leftp == 46) {
+    if (anl2leftp == 47) {
 
       clearInterval(imganl2);
       imganl2 = setInterval(frametoppa2, 50);
@@ -921,7 +1030,7 @@ function samplemove() {
 
   function framea3() {
 
-    if (anl3leftp == 36) {
+    if (anl3leftp == 35) {
 
       clearInterval(imganl3);
       imganl3 = setInterval(frametopa3, 50);
@@ -955,6 +1064,85 @@ function samplemove() {
 
   }
   
+
+
+/* 4*/
+
+function framea4() {
+
+  if (anl4leftp == 41) {
+
+    clearInterval(imganl4);
+    imganl4 = setInterval(frametopa4, 50);
+
+  } else {
+
+
+    anl4leftp++;
+
+    anl4img.style.left = anl4leftp + '%';
+
+  }
+
+}
+
+function frametopa4() {
+
+  if (anl4topp == 29) {
+
+    clearInterval(imganl4);
+    
+
+  } else {
+
+
+    anl4topp++;
+
+    anl4img.style.top = anl4topp + '%';
+
+  }
+
+}
+
+
+/* 5*/
+
+function framea5() {
+
+  if (anl5leftp == 53) {
+
+    clearInterval(imganl5);
+    imganl5 = setInterval(frametopa5, 50);
+
+  } else {
+
+
+    anl5leftp++;
+
+    anl5img.style.left = anl5leftp + '%';
+
+  }
+
+}
+
+function frametopa5() {
+
+  if (anl5topp == 29) {
+
+    clearInterval(imganl5);
+    
+
+  } else {
+
+
+    anl5topp++;
+
+    anl5img.style.top = anl5topp + '%';
+
+  }
+
+}
+
 }
 
 /*********************************************************** inject buffer *********************************************************************/
@@ -1010,6 +1198,7 @@ canvasp1 = document.getElementById("bufferc1");
 
 function buffercanvas2(){
 /** canvas 2**/
+
 canvasp2 = document.getElementById("bufferc2");
       ctxgp2 = canvasp2.getContext("2d");
       var posYp2 = 0;
@@ -1050,6 +1239,7 @@ canvasp2 = document.getElementById("bufferc2");
     }
 /** canvas 3**/
 function buffercanvas3(){
+ 
   clearInterval(clearcanvas3);
    document.getElementById('asso_disso').style.top= 34 + "%";
   document.getElementById('asso_disso').style.left= 61 + "%";
@@ -1057,19 +1247,19 @@ function buffercanvas3(){
 
   var anlb1img = document.getElementById("analyteimg1");
   var anlb2img = document.getElementById("analyteimg2");
-  //var anlb3img = document.getElementById("analyteimg3");
+  var anlb4img = document.getElementById("analyteimg4");
   var anl1toppb = 29;
   var anl1leftpb = 56;
   var anl2toppb = 29;
   var anl2leftpb = 46;
-  //var anl3toppb= 29;
-  //var anl3leftpb = 36;
+  var anl4toppb= 29;
+  var anl4leftpb = 36;
 
   //
 
   imganlb1 = setInterval(frametopab, 50); /* frame is 50 denotes the speed of the movement*/
   imganlb2 = setInterval(frametopab2, 50);
- // imganlb3 = setInterval(frametopab3, 50);
+  imganlb4 = setInterval(frametopab4, 50);
   
 
   function frametopab() {
@@ -1095,7 +1285,7 @@ function buffercanvas3(){
    
 
 
-    if (anl1leftpb == 95) {
+    if (anl1leftpb == 90) {
 
       clearInterval(imganlb1);
       document.getElementById("analyteimg1").style.display="none";
@@ -1131,7 +1321,7 @@ function buffercanvas3(){
 
   function frameleftab2() {
 
-    if (anl2leftpb == 95) {
+    if (anl2leftpb == 90) {
 
       clearInterval(imganlb2);
       document.getElementById("analyteimg2").style.display="none";
@@ -1147,44 +1337,49 @@ function buffercanvas3(){
 
   }
 
-  /*3*/
+  /*4*/
 
- /* function frametopab3() {
+ function frametopab4() {
    
-    if (anl3toppb == 17) {
+    if (anl4toppb == 17) {
 
-      clearInterval(imganlb3);
-      imganlb3 = setInterval(frameleftab3, 50);
+      clearInterval(imganlb4);
+      imganlb4 = setInterval(frameleftab4, 50);
 
     } else {
 
 
-      anl3toppb--;
+      anl4toppb--;
 
-      anlb3img.style.top = anl3toppb + '%';
+      anlb4img.style.top = anl4toppb + '%';
 
     }
 
   }
 
-  function frameleftab3() {
+  function frameleftab4() {
 
-    if (anl3leftpb == 95) {
+    if (anl4leftpb == 90) {
 
-      clearInterval(imganlb3);
-      document.getElementById("analyteimg3").style.display="none";
+      clearInterval(imganlb4);
+      document.getElementById("analyteimg4").style.display="none";
+      /*document.getElementById("bufferc1").style.display="none";
+      document.getElementById("bufferc2").style.display="none";
+      document.getElementById("bufferc3").style.display="none";
+  document.getElementById("bufferc4").style.display="none";
+      document.getElementById("bufferc5").style.display="none";*/
  
     } else {
 
 
-      anl3leftpb++;
+      anl4leftpb++;
 
-      anlb3img.style.left = anl3leftpb + '%';
+      anlb4img.style.left = anl4leftpb + '%';
 
     }
 
   }
-*/
+
 
 
 
@@ -1230,6 +1425,7 @@ canvasp3 = document.getElementById("bufferc3");
 
 /** canvas 4**/
 function buffercanvas4(){
+  
   canvasp4 = document.getElementById("bufferc4");
         ctxgp4 = canvasp4.getContext("2d");
         var posYp4 = 0;
@@ -1271,6 +1467,7 @@ function buffercanvas4(){
 
   /** canvas 5**/
 function buffercanvas5(){
+  
   canvasp5 = document.getElementById("bufferc5");
         ctxgp5 = canvasp5.getContext("2d");
         var posYp5 = 0;
@@ -1318,9 +1515,12 @@ function buffercanvas5(){
 
 }
 
+var imganlb5= null;
 function glycinecheckbox(){
   
-  
+  $('#alertModal1').modal('show');
+  $('.modal-body').text('The surface is regenerated by removing remaning bound analyte. ');
+ 
 
 /** canvas 1**/
 var canvasp1g = document.getElementById("bufferc1");
@@ -1404,9 +1604,15 @@ canvasp2 = document.getElementById("bufferc2");
     function buffercanvas3(){
       clearInterval(clearcanvas3);
       var anlb3img = document.getElementById("analyteimg3");
+      var anlb5img = document.getElementById("analyteimg5");
 var anl3toppb= 29;
   var anl3leftpb = 36;
+  var anl5toppb= 29;
+  var anl5leftpb = 36;
+
   imganlb3 = setInterval(frametopab3, 50);
+  imganlb5 = setInterval(frametopab5, 50);
+
 /*3*/
 
   function frametopab3() {
@@ -1429,7 +1635,7 @@ var anl3toppb= 29;
 
   function frameleftab3() {
 
-    if (anl3leftpb == 95) {
+    if (anl3leftpb == 90) {
 
       clearInterval(imganlb3);
       document.getElementById("analyteimg3").style.display="none";
@@ -1445,6 +1651,44 @@ var anl3toppb= 29;
 
   }
 
+
+/*5*/
+
+  function frametopab5() {
+   
+    if (anl5toppb == 17) {
+
+      clearInterval(imganlb5);
+      imganlb5 = setInterval(frameleftab5, 50);
+
+    } else {
+
+
+      anl5toppb--;
+
+      anlb5img.style.top = anl5toppb + '%';
+
+    }
+
+  }
+
+  function frameleftab5() {
+
+    if (anl5leftpb == 90) {
+
+      clearInterval(imganlb5);
+      document.getElementById("analyteimg5").style.display="none";
+ 
+    } else {
+
+
+      anl5leftpb++;
+
+      anlb5img.style.left = anl5leftpb + '%';
+
+    }
+
+  }
 
 
 

@@ -16,7 +16,11 @@ The goal of immobilization is to attach an interactant to a sensor surface, eith
     - Conditions of immobilization such as temperature, flow rate, buffers etc. 
 
 The procedure of performing the most commonly used immobilization method, covalent immobilization using amine coupling method is discussed below. 
-With this method, carboxyl groups on the surface of the sensor chip surface are first activated with a mixture of EDC (1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide) and NHS (N-hydroxysuccinimide) to give reactive succinimide esters. During the ligand immobilization process, the ligand is introduced to the surface and reacts with the dextran matrix. This reaction results in the covalent linkage of the ligand with the primary amine groups or other nucleophilic groups present on the surface.
+With this method, carboxyl groups on the surface of the sensor chip surface are first activated with a mixture of EDC (1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide) and NHS (N-hydroxysuccinimide) to give reactive succinimide esters. During the ligand immobilization process, the ligand is introduced to the surface and reacts with the dextran matrix. This
+reaction results in the covalent linkage of the ligand consisting of the primary amine groups or other nucleophilic groups to the carboxyl group on the sensor chip.  
+
+
+
 Once the ligand is immobilized, any remaining active groups on the surface are deactivated by injecting a reagent. This step also helps in removing any ligand that is non-covalently bound to the surface. The final step involves measuring the amount of ligand that is attached to the surface after the deactivation process is completed. This step also helps in removing any ligand that was not covalently attached to the surface.
 
 <div align="center">

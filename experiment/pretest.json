@@ -2,36 +2,123 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Surface plasmon resonance is used to study which type of molecular interactions?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Protein-protein",
+        "b": "Protein-DNA",
+        "c": "DNA-protein",
+        "d": "All of the above                         "
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the following materials is commonly used to coat the SPR sensor chip? ",
+      "answers": {
+        "a": "Silicon",
+        "b": "Gold",
+        "c": "Plastic",
+        "d": "None of the above"
       },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    
+    {
+      "question": "3. The detection unit of the SPR sensors detects which of the following parameters? ",
+      "answers": {
+        "a": "Conductivity",
+        "b": "Absorbance",
+        "c": "Refractive index changes",
+        "d": "Pressure"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. When there is an increase in the refractive index of the medium in contact to the metal surface, the SPR angle ",
+      "answers": {
+        "a": "Remains constant",
+        "b": "Increases",
+        "c": "Decreases ",
+        "d": "Fluctuates"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The primary advantage of using SPR for protein-protein interaction is ",
+      "answers": {
+        "a": "High sensitivity",
+        "b": "Real-time monitoring",
+        "c": "Label-free detection",
+        "d": "All of the above"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. The RU in the SPR sensorgram stands for ",
+      "answers": {
+        "a": "Resonance Unit",
+        "b": "Response Unit",
+        "c": "Refraction unit",
+        "d": "None of the above"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "7. Which phase of the SPR experiment depicts the injection of an interacting molecule (analyte) over the immobilized ligand? ",
+      "answers": {
+        "a": "Association phase",
+        "b": "Equilibration phase",
+        "c": "Dissociation phase",
+        "d": "Regeneration phase"
+      },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "8. The binding kinetics between two proteins depends on which of the following parameters? ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Changes in absorbance",
+        "b": "Changes in mass",
+        "c": "Changes in magnetic field",
+        "d": "Changes in fluorescence intensity"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "9. What is the relation between the dissociation constant (KD) and binding affinity between two interacting proteins? ",
+      "answers": {
+        "a": "Inversely proportional",
+        "b": "Directly proportional",
+        "c": "Logarithmically relation",
+        "d": "Not correlated"
       },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "10. Covalent immobilization of ligand on the sensor chip is achieved using ",
+      "answers": {
+        "a": "Amine",
+        "b": "Aldehyde coupling",
+        "c": "Both a & b",
+        "d": "High affinity capture"
+      },
+      
       "correctAnswer": "c",
       "difficulty": "beginner"
     }

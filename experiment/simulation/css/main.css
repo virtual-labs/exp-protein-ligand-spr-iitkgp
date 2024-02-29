@@ -1,1 +1,543 @@
 /* You CSS goes in here */
+/*
+Lab name: Experimental Biochemistry
+Exp name: Kinetic characterization of protein-ligand binding by surface plasmon resonance (SPR)
+File name: main.css
+Developer: Prakriti Dhang*/
+
+
+.card {
+    margin-bottom: 5px;
+}
+
+.img-container {
+    
+    display: inline-block;
+    position: relative;
+}
+
+.div-inline {
+
+    display: inline-block;
+}
+
+#setup{
+    position: relative;
+    top:1%;
+    left:5%;
+    width:70%;
+    
+
+
+}
+#setuplight{
+    position: relative;
+    top:1%;
+    left:5%;
+    width:90%;
+
+
+}
+
+#opentsenchip{
+    position: absolute;
+    top:23.8%;
+    left:38%;
+    width: 12%;
+    height:12%;
+    cursor: pointer;
+}
+
+
+.door
+{
+  background-color: transparent;
+  display:block;
+ 
+  width:12%;
+  height:12%;
+
+  /*Speed of the Door animation*/
+  transition: all 0.7s ease-in-out;
+}
+.door1 img{
+    
+  transform-style: preserve-3d;
+  transition: transform 2s, box-shadow .5s;
+  transform-origin: bottom center; 
+  
+
+}
+.doorOpen1 img
+  {
+    transform: perspective(800px) rotateX(-105deg);
+    
+  }
+
+  #sampletdoor{
+    position: absolute;
+    top:67%;
+    left:22.3%;
+    width: 20%;
+    height:21%;
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  .sdoor
+  {
+    background-color: transparent;
+    display:block;
+    width:12%;
+    height:12%;
+  
+    /*Speed of the Door animation*/
+    transition: all 0.7s ease-in-out;
+  }
+
+
+  .sdoor1 img{
+    
+    transform-style: preserve-3d;
+    transition: transform 2s, box-shadow .5s;
+    transform-origin: top center; 
+    
+  
+  }
+  .sdoorOpen1 img
+    {
+      transform: perspective(800px) rotateX(-60deg);
+      
+    }
+
+
+  #trayout{
+    position: absolute;
+    top:72%;  /*72- 85*/
+    left:23.8%; /* 23.5 -78 */
+    width: 17%;
+    height:12%;
+}
+
+#sampletray{
+    position: absolute;
+    top:72%;
+    left:78%; /* 23.5 -78 */
+    width: 17%;
+    height:12%;
+    cursor: pointer;
+}
+
+
+#sampletube{
+    position: absolute;
+    top:74%;  /*54 -87-74*/
+    left:84.8%; /* 78 -26-25 */
+    width: 3%;
+    height:8%;
+    display: none;
+    cursor: pointer;
+}
+
+#edcnhs{
+    position: absolute;
+    top:74%;  /*54 -87-74*/
+    left:80%; /* 78 -26-25 */
+    width: 3%;
+    height:8%;
+    display: none;
+    cursor: pointer;
+}
+
+
+#etha{
+    position: absolute;
+    top:74%;  /*54 -87-74*/
+    left:89.8%; /* 78 -26-25 */
+    width: 3%;
+    height:8%;
+    display: none;
+    cursor: pointer;
+}
+#sampletube1{
+    position: absolute;
+    top:74%; /*54 -87- 74*/
+    left:80%; /* 85 - 31-30 */
+    width: 3%;
+    height:8%;
+    display: none;
+    cursor: pointer;
+}
+
+#sensorchip{
+    position: absolute;
+    top:20%;
+    left:78%;  /* 78-37  */
+    width: 15%;
+    height:18%;
+    cursor: pointer;
+}
+
+
+
+
+#stp4a{
+    position: relative;
+    top:1%;
+    left:1%; 
+    width: 25%;
+  
+    display: none;
+}
+#stp4b{
+    position: absolute;
+    top:1%;
+    left:30%; 
+    width: 18%;
+    cursor: pointer;
+    display: none;
+}
+#stp4c{
+    position: absolute;
+    top:5%;
+    left:33%; 
+    width: 25%;
+   
+    display: none;
+}
+#stp4d{
+    position: absolute;
+    top:1%;
+    left:68%;  
+    width:29%;
+  
+    display: none;
+}
+
+#light{
+    position: absolute;
+    top:74%;
+    left:20%;
+    width: 16%;
+    height:25%;
+}
+
+
+#detector{
+    position: absolute;
+    top:73%;
+    left:64%;
+    width: 16%;
+    height:25%;
+}
+
+#ligandimg1{
+    position: absolute;
+    top:15%; /** 15 * 32 **/
+    left:5%; /** 5 * 58 **/
+    width: 5%;
+    height:10%;
+    display: none;
+    
+}
+
+#analyteimg1{
+    position: absolute;
+    top:16%; /** 16 * 29 **/
+    left:6%; /** 6 * 59 **/
+    width: 3%;
+    height:6%;
+    display: none;
+   
+}
+
+
+#ligandimg2{
+    position: absolute;
+    top:15%; /** 15* 32 **/
+    left:5%; /** 5 * 46 **/
+    width: 5%;
+    height:10%;
+    display: none;
+    
+}
+
+#analyteimg2{
+    position: absolute;
+    top:17%; /** 17 * 29 **/
+    left:5%; /** 5 * 47 **/
+    width: 3%;
+    height:6%;
+    display: none;
+    
+}
+
+#ligandimg3{
+    position: absolute;
+    top:15%; /** 15 * 32 **/
+    left:5%; /** 5 * 34 **/
+    width: 5%;
+    height:10%;
+    display: none;
+   
+}
+
+#analyteimg3{
+    position: absolute;
+    top:17%; /** 17 * 29 **/
+    left:5%; /** 5 * 35 **/
+    width: 3%;
+    height:6%;
+    display: none;
+    
+}
+
+#ligandimg4{
+    position: absolute;
+    top:15%; /** 15 * 32 **/
+    left:5%; /** 5 * 40 **/
+    width: 5%;
+    height:10%;
+    display: none;
+   
+}
+
+#analyteimg4{
+    position: absolute;
+    top:15%; /** 17 * 29 **/
+    left:5%; /** 5 * 41 **/
+    width: 3%;
+    height:6%;
+    display: none;
+    
+}
+
+#ligandimg5{
+    position: absolute;
+    top:15%; /** 15 * 32 **/
+    left:5%; /** 5 * 52 **/
+    width: 5%;
+    height:10%;
+    display: none;
+   
+}
+
+#analyteimg5{
+    position: absolute;
+    top:17%; /** 17 * 29 **/
+    left:5%; /** 5 * 53 **/
+    width: 3%;
+    height:6%;
+    display: none;
+    
+}
+
+
+#asso_disso{
+    position: absolute;
+    top:34%; /** 34 * 32 **/
+    left:61%; /** 61 *61  **/
+    width: 0.2%;
+    height:60%;
+    transform: rotate(-50deg); /*-50  -53 */
+    z-index: 2;
+    display: none;
+}
+
+#triangleCanvas{
+    position: absolute;
+    top:19%;
+    left:30.5%;
+    width: 18%;
+    height:90%;
+    transform: rotate(49deg);
+}
+
+#triangleCanvas1{
+    position: absolute;
+    top:19%;
+    left:50.8%;
+    width: 20%;
+    height:90%;
+    transform: rotate(-49deg);
+}
+
+
+
+#bufferc1{
+    position: absolute;
+    top:5%;
+    left:6%;
+    width: 16%;
+    height:20%;
+    opacity: 85%;
+    
+   
+    
+}
+#bufferc2{
+    position: absolute;
+    top:10%;
+    left:20%;
+    width: 15%;
+    height:20%;
+    transform: rotate(21deg);
+    opacity: 85%;
+   
+    
+}
+#bufferc3{
+    position: absolute;
+    top:16%;
+    left:32.9%;
+    width: 35%;
+    height:20%;
+  opacity: 85%;
+
+}
+
+
+#bufferc4{
+    position: absolute;
+    top:10%;
+    left:65%;
+    width: 15%;
+    height:19%;
+    transform: rotate(-21deg);
+    opacity: 85%;
+}
+
+#bufferc5{
+    position: absolute;
+    top:5%;
+    left:78%;
+    width: 16%;
+    height:20%;
+    opacity:85%;
+}
+
+
+.btn-purple{--bs-btn-color:#fff;
+    --bs-btn-bg:#a646ff;
+    --bs-btn-border-color:#a646ff;
+    --bs-btn-hover-color:#fff;--bs-btn-hover-bg:#9130ec;
+    --bs-btn-hover-border-color:#a646ff;
+    --bs-btn-focus-shadow-rgb:49,132,253;
+    --bs-btn-active-color:#fff;
+    --bs-btn-active-bg:#a646ff;
+    --bs-btn-active-border-color:purple;
+    --bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color:#fff;
+    --bs-btn-disabled-bg:#a646ff;
+    --bs-btn-disabled-border-color:#a646ff;
+}
+
+
+
+  
+
+  .btn-violet {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #673ab7;
+    --bs-btn-border-color: #673ab7;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #5e35b1;
+    --bs-btn-hover-border-color: #673ab7;
+    --bs-btn-focus-shadow-rgb: 103, 58, 183;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #673ab7;
+    --bs-btn-active-border-color: #4527a0;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #673ab7;
+    --bs-btn-disabled-border-color: #673ab7;
+  }
+
+  .btn-orange {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ff9800;
+    --bs-btn-border-color: #ff9800;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #f57c00;
+    --bs-btn-hover-border-color: #ff9800;
+    --bs-btn-focus-shadow-rgb: 255, 152, 0;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ff9800;
+    --bs-btn-active-border-color: #e65100;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #ff9800;
+    --bs-btn-disabled-border-color: #ff9800;
+  }
+
+
+
+
+  /**/
+  .btn-blue {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #2196F3;
+    --bs-btn-border-color: #2196F3;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1565C0;
+    --bs-btn-hover-border-color: #2196F3;
+    --bs-btn-focus-shadow-rgb: 33, 150, 243;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2196F3;
+    --bs-btn-active-border-color: #0D47A1;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #2196F3;
+    --bs-btn-disabled-border-color: #2196F3;
+  }
+
+  .btn-indian-red {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #CD5C5C;
+  --bs-btn-border-color: #CD5C5C;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #B22222;
+  --bs-btn-hover-border-color: #CD5C5C;
+  --bs-btn-focus-shadow-rgb: 205, 92, 92;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #CD5C5C;
+  --bs-btn-active-border-color: #8B0000;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #CD5C5C;
+  --bs-btn-disabled-border-color: #CD5C5C;
+}
+
+.btn-lime {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #00FF00;
+    --bs-btn-border-color: #00FF00;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #00E600;
+    --bs-btn-hover-border-color: #00FF00;
+    --bs-btn-focus-shadow-rgb: 0, 255, 0;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #00FF00;
+    --bs-btn-active-border-color: #00B300;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #00FF00;
+    --bs-btn-disabled-border-color: #00FF00;
+  }
+
+  .btn-olive {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #808000;
+    --bs-btn-border-color: #808000;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6b6b00;
+    --bs-btn-hover-border-color: #808000;
+    --bs-btn-focus-shadow-rgb: 128, 128, 0;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #808000;
+    --bs-btn-active-border-color: #595900;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #808000;
+    --bs-btn-disabled-border-color: #808000;
+  }

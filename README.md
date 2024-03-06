@@ -34,4 +34,4 @@ Surface plasmon resonance helps perform molecular interactions in real time. The
 SrNo | Name | Vlabs Developer or Integration Engineer| Designation | Department| Institute| 
 :--|:--|:--|:--|:--|:--|
 1 | **Prakriti Dhang** | Developer and Integration Engineer | Project Scientist | Department of Mechanical Engineering | IIT Kharagpur |
-2 | **Namrata Ganguli** | | Research Scholar | School of Bioscience | IIT Kharagpur |
+2 | **Puja Kumari** | | Research Scholar | School of Bioscience | IIT Kharagpur |

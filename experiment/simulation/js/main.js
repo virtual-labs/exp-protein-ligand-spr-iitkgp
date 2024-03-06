@@ -59,7 +59,7 @@ element1.addEventListener("click", toggleDoor);
 function toggleDoor() {
   console.log("Door toggled!");
   element2.classList.toggle("doorOpen1");
-  window.scrollBy(0, 1000);
+  window.scrollBy(0, 1200);
 
 }
 

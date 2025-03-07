@@ -1,12 +1,3 @@
-## Objective
-
-Surface plasmon resonance helps perform molecular interactions in real time. The studies can be used to observe if two or more interactants bind to each other. It can also be used to measure how strong the interactions are, and even to measure the actual association and dissociation rates, specificity, and affinity of the interactions.
-The objectives of this experiment are:
-1. To perform protein-protein interaction using surface plasmon resonance.
-2. To analyze the molecular interaction obtained as an SPR curve or a sensorgram.
-3. To calculate the binding affinity of the protein interactions performed.
-
-
 ## Theory
 
 Surface Plasmon Resonance (SPR) is a phenomenon that can be observed in thin conducting films at an interface between media of different refractive index. In SPR systems, the media are the glass of the sensor chip and the sample solution, and the conducting film is a thin layer of gold on the sensor chip surface. SPR is a physical process that can occur when plane-polarized light hits a thin metal film under total internal reflection conditions. When a light beam hits a half-circular prism, the light is bent towards the plane of interface, when it is passing from a denser medium to a less dense one. Changing the incidence angle (Θ) changes the out-coming light until it reaches a critical angle. At this point, all the incoming light reflects within the circular prism. This is called total internal reflection (TIR). 

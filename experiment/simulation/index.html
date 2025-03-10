@@ -28,9 +28,12 @@ Developer: Prakriti Dhang
 				<div class="card">
 					<div class="card-header fs-5 fw-bold">Instructions</div>
 					<div class="card-body">
-						<ol>
+						<ul>
 							<li>Click on "Start the Experiment" button
 							</li>
+							</ul>
+							<ul> <li class="fw-bold">Part 1: Preparation</li>
+								<ol>
 							<li>Click on "Clean with MilliQ" button.</li>
 							<li>Next click on "Dock the SPR sensor chip" button to enable "Open sensor chip door" button. Click on "Open sensor chip door"
 								button.</li>
@@ -39,6 +42,10 @@ Developer: Prakriti Dhang
 								button.</li>
 							<li>Check all the composition required for preparing buffer. Click on "Primer with buffer"
 								button.</li>
+							</ol>
+							</ul>
+							<ul> <li class="fw-bold">Part 2: Ligand Immobilization</li>
+								<ol>
 							<li>Click on "EDC" and "NHS" checkboxes in step 4 and on button "Reagents" for sample
 								preparation. </li>
 							<li>Click on "Ligand" and "Sodium acetate buffer pH>3.5" checkboxes in step 4 and on button
@@ -58,7 +65,10 @@ Developer: Prakriti Dhang
 							</ol>
 
 							<li>Click on "Start ligand immobilization" button to see the Ligand Immobilization.</li>
-							
+							</ol>
+						</ul>
+						<ul><li class="fw-bold">Part 3: Interaction Analysis</li>
+							<ol>
 							<li>Now click on the "Open sample tray door" button in step 5. </li>
 							<ol>
 							<li>Next click on "Eject tray plate" button. Once the plate comes out form
@@ -70,13 +80,24 @@ Developer: Prakriti Dhang
 							<li>Click on the "Close sample tray door" button in step 5.</li>
 							</li>
 						</ol>
+						
 
 							
 							<li>Click on "Inject analyte" button to see the Interation analysis.</li>
 							<li>Click on "Inject buffer" button.</li>
-							<li>Click on "Glycine 1-3" checkbox to remove remaining bound analyte. </li>
-							<li> Click on "Data analysis A" and "Data analysis B" button.</li>
+							</ol>
+							</ul>
+							<ul> <li class="fw-bold">Part 4: Regeneration Phase </li>
+								<ol>
+							<li>Click on "Glycine pH 1-3" checkbox to remove remaining bound analyte. </li>
+							</ol>
+							</ul>
+							<ul><li class="fw-bold">Part 5: Test run and Concentration- dependent analysis </li>
+								<ol>
+							<li> Click on "Test run" and "Concentration- dependent analysis" button.</li>
 						</ol>
+						</ul>
+					
 						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
 					</div>
 				</div>
@@ -85,6 +106,7 @@ Developer: Prakriti Dhang
 				<div class="card">
 					<div class="card-header fs-5 fw-bold">Input Panels</div>
 					<div class="card-body">
+						
 						<table id="ex2tb2" class="m-1 table table-bordered">
 							<tr>
 								<td colspan="2">
@@ -99,6 +121,13 @@ Developer: Prakriti Dhang
 										Experiment</button>
 								</td>
 							</tr>
+						</table>
+						<div class="row">
+							<div class="col-md-6">
+						<button id="stepini" type="button"
+										class="btn btn-light border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="stepini()">Part 1: Preparation </button>
+							<table id="ex2tb2a" class="m-1 table table-bordered" style="display: none;">
 							<tr>
 								<td>Step 1</td>
 								<td><button id="step1" type="button"
@@ -156,16 +185,23 @@ Developer: Prakriti Dhang
 								</td>
 
 							</tr>
-							<tr>
+						</table>
+						</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+						<button id="stepligimmo" type="button" class="btn btn-light border border-1  rounded-3 fs-6 m-1" onclick="stepligimmo()" style="cursor: pointer;" >Part 2: Ligand Immobilization </button>
+							<table id="ex2tb2b" class="m-1 table table-bordered" style="display: none;">
+							
+							<!--ligand immobilization-->
+							<tr >
 								<td rowspan="7">Step 4</td>
-							<tr>
-								<td><!--button id="step4" type="button"
-										class="btn btn-light border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer;" >Ligand Immobilization </button-->
+							<!--tr >
+								<td>
 									<p class="h5">Ligand Immobilization</p>
 								</td>
-							</tr>
-							<tr>
+							</tr-->
+							<tr >
 								<td>
 									<div class="form-check div-inline">
 										<input class="form-check-input" type="checkbox" value="" id="chk1" disabled>
@@ -255,18 +291,23 @@ Developer: Prakriti Dhang
 
 
 							</tr>
-
-							<tr>
+						</table>
+						</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+  <!--  Interactional Analysis-->
+  <button id="stepintanaly" type="button" class="btn btn-light border border-1  rounded-3 fs-6 m-1" onclick="stepintanaly()"  style="cursor: pointer; ">Part 3: Interaction analysis
+									</button>
+  <table id="ex2tb2c" class="m-1 table table-bordered" style="display: none;">
+							<tr >
 								<td rowspan="7">Step 5</td>
 
-							<tr>
-								<td><!--button id="step5" type="button"
-										class="btn btn-light border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; ">Interaction analysis
-									</button-->
+							<!--tr>
+								<td>
 									<p class="h5">Interaction Analysis</p>
 								</td>
-							</tr>
+							</tr-->
 
 							<tr>
 								<td>
@@ -339,13 +380,23 @@ Developer: Prakriti Dhang
 							</tr>
 
 							</tr>
+						</table>
+						</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+							<!-- Regeneration phase-->
+							<button id="stepreg" type="button"
+										class="btn btn-light border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="stepreg()">Part 4: Regeneration Phase </button>
+							<table id="ex2tb2d" class="m-1 table table-bordered" style="display: none;">
 							<tr>
 								<td rowspan="3">Step 6</td>
-								<tr>
+								<!--tr>
 									<td>
 										<p class="h5">Regeneration Phase</p>
 									</td>
-								</tr>
+								</tr-->
 								<tr>
 								<td>
 										<div class="form-check div-inline">
@@ -357,7 +408,16 @@ Developer: Prakriti Dhang
 									</td>
 							</tr>
 						</tr>
-							<tr>
+					</table>
+					</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+					<button id="stepdata" type="button"
+										class="btn btn-light border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="stepdata()" >Part 5: Test run and Concentration- dependent analysis  </button>
+						<table id="ex2tb2e" class="m-1 table table-bordered" style="display: none;">
+							<tr >
 								<td rowspan="3">Step 7</td>
 							<tr>
 								<td><button id="step7" type="button"
@@ -376,10 +436,12 @@ Developer: Prakriti Dhang
 
 							</tr>
 						</table>
+						</div>
+					</div>
 					</div>
 				</div>
 			</div>
-
+</div>
 		</div>
 		<!--div class="row">
 			<div class="col-md-12">

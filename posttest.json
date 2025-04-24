@@ -1,0 +1,125 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Refer to the following sensorgram and answer the questions accordingly: <br><p style=\"text-align:center\"> <img src=\"images/postquizq1.png\"></p> <br> 1. Which curve has the fastest dissociation rate constant (kd) out of the four?  ",
+      "answers": {
+        "a": "A",
+        "b": "B",
+        "c": "C",
+        "d": "D"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the curves is saturating the ligand?",
+      "answers": {
+        "a": "B",
+        "b": "A",
+        "c": "None",
+        "d": "All of them"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which of the curves have fastest association rate constant?",
+      "answers": {
+        "a": "A",
+        "b": "C",
+        "c": "R<sub>max</sub> should be known",
+        "d": "Analyte concentration should be known"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. A sensorgram exhibits a rapid rise in response units upon injection of the analyte, what does this response suggests? ",
+      "answers": {
+        "a": "High affinity binding ",
+        "b": "Low affinity binding ",
+        "c": "No binding ",
+        "d": "Sensor saturation"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The purpose of a blank injection in an SPR experiment is to:  ",
+      "answers": {
+        "a": "To test the sensitivity of the sensor ",
+        "b": "To measure non-specific binding  ",
+        "c": "To evaluate the stability of the instrument  ",
+        "d": "To calibrate the sensor surface"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. For SPR, analytes should be used in replicates to: ",
+      "answers": {
+        "a": "to show dilution errors",
+        "b": "to show that system is stable and reproducible ",
+        "c": "to minimize systematic errors ",
+        "d": "to increase number of curves"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "7. The equilibrium dissociation constant (KD) in SPR is calculated as the ratio of the dissociation rate constant (kd) to the association rate constant (ka). Mathematically, it is represented as: KD=kd/ka If ka=2.5  x 10<sup>4</sup> M<sup>-1</sup>s<sup>-1</sup> and kd=1.0  x 10<sup>- 2</sup> M<sup>-1</sup>, what is the KD value? ",
+      "answers": {
+        "a": "4.0 x 10<sup>-7</sup> M ",
+        "b": "4.0 x 10<sup>-2</sup> M",
+        "c": "2.5 x 10<sup>6</sup> M",
+        "d": "2.5 x 10<sup>-6</sup> M"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "8. What functional groups on the ligand or sensor surface are often utilized for bonding in covalent immobilization?  ",
+      "answers": {
+        "a": "Aromatic groups ",
+        "b": "Hydroxyl groups ",
+        "c": "Carboxyl groups ",
+        "d": "Alkene groups"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "9. In EDC/NHS covalent immobilization, what is the role of EDC (1-Ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride)? ",
+      "answers": {
+        "a": "Activates amine groups on the ligand ",
+        "b": "Activates carboxyl groups on the ligand",
+        "c": "Activates hydroxyl groups on the ligand ",
+        "d": "Activates sulfhydryl groups on the ligand"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "10. If the EDC/NHS activation step is incomplete, what is a likely outcome during ligand immobilization?",
+      "answers": {
+        "a": "Enhanced binding affinity ",
+        "b": "Reduced ligand stability",
+        "c": "Irreversible binding ",
+        "d": "Increased non-specific binding"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}

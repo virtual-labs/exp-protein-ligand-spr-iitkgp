@@ -71,7 +71,7 @@ SPR experiments can be used to measure kinetic binding constants (k<sub>a</sub>,
 #### c. **Steady state:**
  When injection time is sufficient, the curve levels out, showing equal association and dissociation events. Req (response at equilibrium) depends on ligand binding sites, analyte concentration, and dissociation constant. The following equations can be used  to calculate Req.
 
-$$  R_{eq} = \frac{k_a.C}{k_a.C +k_d} . R_{max} $$
+$$ R_{eq} = \frac{k_a.C}{k_a.C +k_d} . R_{max} $$
 
 where, C is the analyte concentration   
 R<sub>max</sub> or the maximal response is when all the ligand binding sites are occupied by the analyte. 

@@ -95,3 +95,6 @@ Surface Plasmon Resonance (SPR) is a potent analytical technique often used in:
 - Drug discovery
 - Medical diagnostics
 As technology progresses, SPR is expected to become increasingly essential in both basic and applied research.
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

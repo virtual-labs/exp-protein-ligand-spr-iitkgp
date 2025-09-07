@@ -89,12 +89,7 @@ The final step is the regeneration phase, where the regeneration solution, such 
 
 SPR experiments can be used to study both kinetics and affinity of the interaction. Both kinetics and equilibrium analysis are important aspects of SPR experiments, and they provide different types of information about the interactions between biomolecules. Kinetics focuses on how fast things happen and includes association and dissociation. Affinity, on the other hand, focuses on how strong a complex is and determines how much complex is formed at equilibrium.
 
-#### Applications
-Surface Plasmon Resonance (SPR) is a potent analytical technique often used in:
-- Understanding receptor-ligand interactions 
-- Drug discovery
-- Medical diagnostics
-As technology progresses, SPR is expected to become increasingly essential in both basic and applied research.
+
 
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

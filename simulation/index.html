@@ -1,0 +1,689 @@
+<!--
+
+Lab name: Experimental Biochemistry
+Exp name: Kinetic characterization of protein-ligand binding by surface plasmon resonance (SPR)
+File name: index.html
+Developer: Prakriti Dhang
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Add CSS at the head of HTML file -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"></script-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<div class="container-fluid p-2">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header fs-5 fw-bold">Instructions</div>
+					<div class="card-body">
+						<ul>
+							<li>Click on "Start the Experiment" button
+							</li>
+							</ul>
+							<ul> <li class="fw-bold">Part 1: Preparation</li>
+								<ol>
+							<li>Click on "Clean with MilliQ" button.</li>
+							<li>Next click on "Dock the SPR sensor chip" button to enable "Open sensor chip door" button. Click on "Open sensor chip door"
+								button.</li>
+							<li>Now click on the Sensor chip image. After sensor chip is placed in the machine, click on
+								the "Close"
+								button.</li>
+							<li>Check all the composition required for preparing buffer. Click on "Primer with buffer"
+								button.</li>
+							</ol>
+							</ul>
+							<ul> <li class="fw-bold">Part 2: Ligand Immobilization</li>
+								<ol>
+							<li>Click on "EDC" and "NHS" checkboxes in step 4 and on button "Reagents" for sample
+								preparation. </li>
+							<li>Click on "Ligand" and "Sodium acetate buffer pH>3.5" checkboxes in step 4 and on button
+								"Sample preparation" for sample preparation. </li>
+							<li>Click on the "Ethanolamine" checkbox in step 4. </li>
+							
+							
+
+								<li>Now click on the "Open sample tray door" button in step 4. </li>
+								<ol>
+								<li>Next click on "Eject tray plate" button. Once the plate comes out 
+									from the SPR machine, click on the sample tray image.</li>
+								<li>Click on the
+									"Inject tray plate" button. </li>
+								<li>Click on the "Close sample tray door" button in step 4.</li>
+								</li>
+							</ol>
+
+							<li>Click on "Start ligand immobilization" button to see the Ligand Immobilization.</li>
+							</ol>
+						</ul>
+						<ul><li class="fw-bold">Part 3: Interaction Analysis</li>
+							<ol>
+							<li>Now click on the "Open sample tray door" button in step 5. </li>
+							<ol>
+							<li>Next click on "Eject tray plate" button. Once the plate comes out form
+								from the SPR machine, click on the "Remove EDC, NHS and
+								ethanolmine sample tubes" button.</li>
+								<li>Click on both the checkboxes in step 5 and on button "Sample preparation". </li>
+							<li>Click on the
+								"Inject tray plate" button. </li>
+							<li>Click on the "Close sample tray door" button in step 5.</li>
+							</li>
+						</ol>
+						
+
+							
+							<li>Click on "Inject analyte" button to see the Interation analysis.</li>
+							<li>Click on "Inject buffer" button.</li>
+							</ol>
+							</ul>
+							<ul> <li class="fw-bold">Part 4: Regeneration Phase </li>
+								<ol>
+							<li>Click on "Glycine pH 1-3" checkbox to remove remaining bound analyte. </li>
+							</ol>
+							</ul>
+							<ul><li class="fw-bold">Part 5: Test run and Concentration- dependent analysis </li>
+								<ol>
+							<li> Click on "Test run" and "Concentration- dependent analysis" button.</li>
+						</ol>
+						</ul>
+					
+						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header fs-5 fw-bold">Input Panels</div>
+					<div class="card-body">
+						
+						<table id="ex2tb2" class="m-1 table table-bordered">
+							<tr>
+								<td colspan="2">
+									<button id="step0" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " data-bs-toggle="modal"
+										data-bs-target="#exampleModal">Start the Experiment</button>
+
+									<button id="steprs" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; float:right " onclick="restartexp()">Re-Do the
+										Experiment</button>
+								</td>
+							</tr>
+						</table>
+						<div class="row">
+							<div class="col-md-6">
+						<button id="stepini" type="button"
+										class="btn btn-light border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="stepini()">Part 1: Preparation </button>
+							<table id="ex2tb2a" class="m-1 table table-bordered" style="display: none;">
+							<tr>
+								<td>Step 1</td>
+								<td><button id="step1" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="cleanwithmilliq()" disabled>Clean with MilliQ
+									</button></td>
+
+							</tr>
+							<tr>
+								<td>Step 2</td>
+								<td><p class="h5">Dock the SPR sensor
+									chip</p><!--button id="step2" type="button"
+										class="btn btn-orange border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="showopenbtn()" disabled>Dock the SPR sensor
+										chip
+									</button-->
+
+									<button id="stepopenschipdoor" type="button"
+										class="open btn btn-orange border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="openschipdoor()" disabled>Open sensor chip door</button>
+								</td>
+
+							</tr>
+							<tr>
+								<td>Step 3</td>
+								<td>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk31" disabled>
+										<label class="form-check-label" for="chk31">
+											10mM HEPES
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk32" disabled>
+										<label class="form-check-label" for="chk32">
+											150mM NaCl
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk33" disabled>
+										<label class="form-check-label" for="chk33">
+											3mM EDTA
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk34" disabled>
+										<label class="form-check-label" for="chk34">
+											0.005% P20
+										</label>
+									</div>
+									<button id="step3" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="primebuffer()" disabled>Prime with buffer
+									</button>
+								</td>
+
+							</tr>
+						</table>
+						</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+						<button id="stepligimmo" type="button" class="btn btn-light border border-1  rounded-3 fs-6 m-1" onclick="stepligimmo()" style="cursor: pointer;" >Part 2: Ligand Immobilization </button>
+							<table id="ex2tb2b" class="m-1 table table-bordered" style="display: none;">
+							
+							<!--ligand immobilization-->
+							<tr >
+								<td rowspan="7">Step 4</td>
+							<!--tr >
+								<td>
+									<p class="h5">Ligand Immobilization</p>
+								</td>
+							</tr-->
+							<tr >
+								<td>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk1" disabled>
+										<label class="form-check-label" for="chk1">
+											EDC
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk2" disabled>
+										<label class="form-check-label" for="chk2">
+											NHS
+										</label>
+									</div>
+
+									<button id="step40" type="button"
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="prepedcnhs()" disabled> Reagents
+									</button>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk3" disabled>
+										<label class="form-check-label" for="chk3">
+											Ligand
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk4" disabled>
+										<label class="form-check-label" for="chk4">
+											Sodium acetate buffer pH>3.5
+										</label>
+									</div>
+
+									<button id="step41" type="button"
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="sampleprep()" disabled>Sample preparation
+									</button>
+
+
+
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk5"
+											onclick="ethacheckbox()" 	disabled>
+										<label class="form-check-label" for="chk5">
+											Ethanolamine
+										</label>
+									</div>
+								</td>
+							</tr>
+
+
+
+							<tr>
+								<td>
+									<button id="stepopenstraydoor" type="button"
+										class="open1 btn btn-secondary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="openstraytpdoor()" disabled >Open sample tray door</button>
+
+									<button id="step421" type="button"
+										class="btn btn-blue border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="openrack()" disabled>Eject tray plate
+									</button>
+									<button id="step422" type="button"
+										class="btn btn-blue border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="injectrack()" disabled>Inject tray plate
+									</button>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<button id="step43" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="ligandrun()" disabled>Start ligand immobilization </button>
+
+
+								</td>
+							</tr>
+
+
+							</tr>
+						</table>
+						</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+  <!--  Interactional Analysis-->
+  <button id="stepintanaly" type="button" class="btn btn-light border border-1  rounded-3 fs-6 m-1" onclick="stepintanaly()"  style="cursor: pointer; ">Part 3: Interaction analysis
+									</button>
+  <table id="ex2tb2c" class="m-1 table table-bordered" style="display: none;">
+							<tr >
+								<td rowspan="7">Step 5</td>
+
+							<!--tr>
+								<td>
+									<p class="h5">Interaction Analysis</p>
+								</td>
+							</tr-->
+
+							<tr>
+								<td>
+									<button id="stepopenstraydoor1" type="button"
+										class="open2 btn btn-secondary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="openstraytpdoor1()" disabled>Open sample tray door</button>
+									<button id="step521" type="button"
+										class="btn btn-blue border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="opentray()" disabled>Eject tray plate </button>
+									<button id="step50b" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="removeedcnhssamples()" disabled>Remove EDC, NHS and
+										Ethanolmine sample tubes
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk51" disabled>
+										<label class="form-check-label" for="chk51">
+											Anlayte
+										</label>
+									</div>
+									<div class="form-check div-inline">
+										<input class="form-check-input" type="checkbox" value="" id="chk52" disabled>
+										<label class="form-check-label" for="chk52">
+											Buffer
+										</label>
+									</div>
+
+									<button id="step51" type="button"
+										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="analytesampleprep()" disabled>Sample
+										preparation
+									</button>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+
+									<button id="step522" type="button"
+										class="btn btn-blue border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="injecttray()" disabled>Inject tray plate
+									</button>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td>
+									<button id="step53" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="runinteraction()" disabled
+										>Inject analyte</button>
+
+
+
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button id="step54" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="addbuffer()" disabled >Inject Buffer </button>
+
+
+								</td>
+							</tr>
+
+							</tr>
+						</table>
+						</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+							<!-- Regeneration phase-->
+							<button id="stepreg" type="button"
+										class="btn btn-light border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="stepreg()">Part 4: Regeneration Phase </button>
+							<table id="ex2tb2d" class="m-1 table table-bordered" style="display: none;">
+							<tr>
+								<td rowspan="3">Step 6</td>
+								<!--tr>
+									<td>
+										<p class="h5">Regeneration Phase</p>
+									</td>
+								</tr-->
+								<tr>
+								<td>
+										<div class="form-check div-inline">
+											<input class="form-check-input" type="checkbox" value="" id="chkgly"  onclick="glycinecheckbox()" disabled>
+											<label class="form-check-label" for="chkgly">
+												Glycine pH 1 - 3
+											</label>
+										</div>
+									</td>
+							</tr>
+						</tr>
+					</table>
+					</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+					<button id="stepdata" type="button"
+										class="btn btn-light border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;" onclick="stepdata()" >Part 5: Test run and Concentration- dependent analysis  </button>
+						<table id="ex2tb2e" class="m-1 table table-bordered" style="display: none;">
+							<tr >
+								<td rowspan="3">Step 7</td>
+							<tr>
+								<td><button id="step7" type="button"
+										class="btn btn-violet border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;"  onclick="dataan1()"  disabled>Test run </button>
+
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button id="step8" type="button"
+										class="btn btn-indian-red border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="dataan2()" disabled>Concentration- dependent analysis</button>
+								</td>
+							</tr>
+
+							</tr>
+						</table>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+</div>
+		</div>
+		<!--div class="row">
+			<div class="col-md-12">
+
+				<div class="card">
+					<div class="card-header fs-5 fw-bold">Action</div>
+					<div class="card-body">
+						<p class="fs-5" id="actionid"></p>
+
+					</div>
+				</div>
+			</div>
+		</div-->
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body border border-1">
+					<div class="img-container">
+						<img src="./images/sprmachine1.png" id="setup" class="img-fluid" alt="machine"
+							data-toggle="tooltip" data-placement="top" title="SPR machine">
+						<img src="./images/sensor_chip.png" id="sensorchip" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Sensor chip">
+						<div class="door door1 ">
+							<img src="./images/opentrayforschip.png" id="opentsenchip" class="img-fluid"
+								data-toggle="tooltip" data-placement="top" title="Sensor chip door">
+						</div>
+
+						<div class="sdoor sdoor1 ">
+							<img src="./images/sampletraydoor.png" id="sampletdoor" class="img-fluid"
+								data-toggle="tooltip" data-placement="top" title="Sample tray door">
+						</div>
+
+						<img src="./images/trayout.png" id="trayout" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Tray plate">
+						<img src="./images/sampletraytube.png" id="sampletray" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Sample tray">
+						<img src="./images/edcnhs.png" id="edcnhs" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="EDC and NHS">
+						<img src="./images/etha.png" id="etha" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Ethanolamine">
+						<img src="./images/sampletube.png" id="sampletube" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Ligand">
+						<img src="./images/sampletube1.png" id="sampletube1" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Anlayte">
+
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body border border-1">
+					<p id="p2" class="h5" style="display: none;">Covalent immobilization using amine coupling method</p>
+					<div class="img-container">
+
+						<img src="./images/4a.png" id="stp4a" class="img-fluid">
+						<!--img src="./images/4_b_spr.png" id="stp4b" class="img-fluid"-->
+						<img src="./images/4_immobilization.png" id="stp4c" class="img-fluid">
+						<img src="./images/4_d_spr.png" id="stp4d" class="img-fluid">
+					</div>
+
+				</div>
+				<div class="card card-body border border-1">
+					<div class="img-container">
+						<img src="./images/setup.png" id="setuplight" class="img-fluid">
+						<img src="./images/light.png" id="light" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Light source">
+						<img src="./images/detector.png" id="detector" class="img-fluid" data-toggle="tooltip"
+							data-placement="top" title="Detector">
+						<img src="./images/ligand_img.png" id="ligandimg1" class="img-fluid">
+						<img src="./images/analyte_img.png" id="analyteimg1" class="img-fluid">
+						<img src="./images/ligand_img.png" id="ligandimg2" class="img-fluid">
+						<img src="./images/analyte_img.png" id="analyteimg2" class="img-fluid">
+						<img src="./images/ligand_img.png" id="ligandimg3" class="img-fluid">
+						<img src="./images/analyte_img.png" id="analyteimg3" class="img-fluid">
+						<img src="./images/asso_disso.png" id="asso_disso" class="img-fluid">
+						<img src="./images/ligand_img.png" id="ligandimg4" class="img-fluid">
+						<img src="./images/analyte_img.png" id="analyteimg4" class="img-fluid">
+						<img src="./images/ligand_img.png" id="ligandimg5" class="img-fluid">
+						<img src="./images/analyte_img.png" id="analyteimg5" class="img-fluid">
+						<canvas id="triangleCanvas"></canvas>
+						<canvas id="triangleCanvas1"></canvas>
+
+
+						<canvas width="10px" height="20px" id="bufferc1" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="bufferc2" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="bufferc3" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="bufferc4" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="bufferc5" style="border: 0px solid black;"></canvas>
+						
+
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<div class="row">
+
+			<div class="col-md-6">
+				<div class="card card-body border border-1" id="chart1" style="display: none;">
+					<div id="chartContainer1" style="height: 500px; width: 100%;"></div>
+					<!--button class="btn btn-olive" id="exportChart">Export Chart</button-->
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body border border-1" id="chart2" style="display: none;">
+					<div id="chartContainer" style="height: 500px; width: 100%;"></div>
+					<!--button class="btn btn-olive" id="exportChart1">Export Chart</button-->
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Alert message: Viewing experience</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>A desktop or laptop is the preferred choice for an enhanced viewing experience.</p>
+						<p> When using a phone, it is recommended to enable the auto-rotate feature for an improved
+							viewing experience.</p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="start()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="cancelmsg()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="alertModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="cancelmsg1()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="alertModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="ligandmove()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="alertModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="samplemove()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Add JS at the bottom of HTML file -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/plotgraph.js"></script>
+	<script src="./js/plotgraph_a.js"></script>
+
+
+	<script>
+
+
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+
+
+	</script>
+
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+
+</html>

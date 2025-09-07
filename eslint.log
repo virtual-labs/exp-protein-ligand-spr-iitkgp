@@ -1,0 +1,156 @@
+
+/home/runner/work/exp-protein-ligand-spr-iitkgp/exp-protein-ligand-spr-iitkgp/experiment/simulation/js/main.js
+     8:10  warning  'start' is defined but never used                 no-unused-vars
+    15:10  warning  'restartexp' is defined but never used            no-unused-vars
+    19:10  warning  'stepini' is defined but never used               no-unused-vars
+    30:10  warning  'cleanwithmilliq' is defined but never used       no-unused-vars
+    31:3   warning  '$' is not defined                                no-undef
+    32:3   warning  '$' is not defined                                no-undef
+    39:10  warning  'cancelmsg' is defined but never used             no-unused-vars
+    45:10  warning  'cancelmsg1' is defined but never used            no-unused-vars
+    73:10  warning  'openschipdoor' is defined but never used         no-unused-vars
+    94:10  warning  'insertchip' is defined but never used            no-unused-vars
+   123:10  warning  'primebuffer' is defined but never used           no-unused-vars
+   125:3   warning  '$' is not defined                                no-undef
+   126:3   warning  '$' is not defined                                no-undef
+   141:3   warning  '$' is not defined                                no-undef
+   142:3   warning  '$' is not defined                                no-undef
+   147:10  warning  'stepligimmo' is defined but never used           no-unused-vars
+   156:10  warning  'prepedcnhs' is defined but never used            no-unused-vars
+   171:5   warning  '$' is not defined                                no-undef
+   172:3   warning  '$' is not defined                                no-undef
+   175:5   warning  '$' is not defined                                no-undef
+   176:5   warning  '$' is not defined                                no-undef
+   183:10  warning  'sampleprep' is defined but never used            no-unused-vars
+   199:3   warning  '$' is not defined                                no-undef
+   200:3   warning  '$' is not defined                                no-undef
+   204:5   warning  '$' is not defined                                no-undef
+   205:5   warning  '$' is not defined                                no-undef
+   211:10  warning  'ethacheckbox' is defined but never used          no-unused-vars
+   224:5   warning  '$' is not defined                                no-undef
+   225:3   warning  '$' is not defined                                no-undef
+   228:5   warning  '$' is not defined                                no-undef
+   229:5   warning  '$' is not defined                                no-undef
+   252:10  warning  'openstraytpdoor' is defined but never used       no-unused-vars
+   276:10  warning  'openrack' is defined but never used              no-unused-vars
+   307:10  warning  'sampletrayinsert' is defined but never used      no-unused-vars
+   337:10  warning  'injectrack' is defined but never used            no-unused-vars
+   362:10  warning  'ligandrun' is defined but never used             no-unused-vars
+   381:25  warning  'posy' is defined but never used                  no-unused-vars
+   397:5   warning  'posy' is not defined                             no-undef
+   398:5   warning  'posy' is not defined                             no-undef
+   400:9   warning  'posy' is not defined                             no-undef
+   400:21  warning  'posy' is not defined                             no-undef
+   403:12  warning  'posy' is not defined                             no-undef
+   411:5   warning  'cancelani' is not defined                        no-undef
+   443:2   warning  '$' is not defined                                no-undef
+   444:3   warning  '$' is not defined                                no-undef
+   453:10  warning  'ligandmove' is defined but never used            no-unused-vars
+   461:3   warning  'lg1img' is not defined                           no-undef
+   462:3   warning  'lg2img' is not defined                           no-undef
+   463:3   warning  'lg3img' is not defined                           no-undef
+   464:3   warning  'lg4img' is not defined                           no-undef
+   465:3   warning  'lg5img' is not defined                           no-undef
+   498:7   warning  'lg1img' is not defined                           no-undef
+   517:7   warning  'lg1img' is not defined                           no-undef
+   534:7   warning  'lg2img' is not defined                           no-undef
+   553:7   warning  'lg2img' is not defined                           no-undef
+   574:7   warning  'lg3img' is not defined                           no-undef
+   593:7   warning  'lg3img' is not defined                           no-undef
+   614:7   warning  'lg4img' is not defined                           no-undef
+   633:7   warning  'lg4img' is not defined                           no-undef
+   654:7   warning  'lg5img' is not defined                           no-undef
+   673:7   warning  'lg5img' is not defined                           no-undef
+   684:10  warning  'stepintanaly' is defined but never used          no-unused-vars
+   709:10  warning  'openstraytpdoor1' is defined but never used      no-unused-vars
+   728:10  warning  'ejectsampletray' is defined but never used       no-unused-vars
+   743:10  warning  'removeedcnhssamples' is defined but never used   no-unused-vars
+   754:3   warning  '$' is not defined                                no-undef
+   755:3   warning  '$' is not defined                                no-undef
+   760:10  warning  'analytesampleprep' is defined but never used     no-unused-vars
+   772:5   warning  '$' is not defined                                no-undef
+   773:5   warning  '$' is not defined                                no-undef
+   783:18  warning  'trayoutimg1' is assigned a value but never used  no-unused-vars
+   784:10  warning  'opentray' is defined but never used              no-unused-vars
+   827:10  warning  'sampletubeinsert1' is defined but never used     no-unused-vars
+   835:10  warning  'injecttray' is defined but never used            no-unused-vars
+   853:10  warning  'runinteraction' is defined but never used        no-unused-vars
+   867:25  warning  'posy' is defined but never used                  no-unused-vars
+   883:5   warning  'posy' is not defined                             no-undef
+   884:5   warning  'posy' is not defined                             no-undef
+   886:9   warning  'posy' is not defined                             no-undef
+   886:21  warning  'posy' is not defined                             no-undef
+   889:12  warning  'posy' is not defined                             no-undef
+   897:5   warning  'cancelani' is not defined                        no-undef
+   929:3   warning  '$' is not defined                                no-undef
+   930:3   warning  '$' is not defined                                no-undef
+   943:10  warning  'samplemove' is defined but never used            no-unused-vars
+   958:3   warning  'anl1img' is not defined                          no-undef
+   959:3   warning  'anl2img' is not defined                          no-undef
+   960:3   warning  'anl3img' is not defined                          no-undef
+   961:3   warning  'anl4img' is not defined                          no-undef
+   962:3   warning  'anl5img' is not defined                          no-undef
+   997:7   warning  'anl1img' is not defined                          no-undef
+  1015:7   warning  'anl1img' is not defined                          no-undef
+  1033:7   warning  'anl2img' is not defined                          no-undef
+  1048:7   warning  'anl2img' is not defined                          no-undef
+  1068:7   warning  'anl3img' is not defined                          no-undef
+  1086:7   warning  'anl3img' is not defined                          no-undef
+  1108:5   warning  'anl4img' is not defined                          no-undef
+  1126:5   warning  'anl4img' is not defined                          no-undef
+  1147:5   warning  'anl5img' is not defined                          no-undef
+  1165:5   warning  'anl5img' is not defined                          no-undef
+  1180:10  warning  'addbuffer' is defined but never used             no-unused-vars
+  1181:3   warning  '$' is not defined                                no-undef
+  1182:3   warning  '$' is not defined                                no-undef
+  1219:9   warning  'cancelani' is not defined                        no-undef
+  1223:7   warning  'clearcanvas2' is not defined                     no-undef
+  1259:9   warning  'cancelani' is not defined                        no-undef
+  1263:7   warning  'clearcanvas3' is not defined                     no-undef
+  1269:17  warning  'clearcanvas3' is not defined                     no-undef
+  1288:3   warning  'imganlb4' is not defined                         no-undef
+  1372:21  warning  'imganlb4' is not defined                         no-undef
+  1373:7   warning  'imganlb4' is not defined                         no-undef
+  1390:21  warning  'imganlb4' is not defined                         no-undef
+  1443:9   warning  'cancelani' is not defined                        no-undef
+  1447:7   warning  'clearcanvas4' is not defined                     no-undef
+  1486:11  warning  'cancelani' is not defined                        no-undef
+  1489:9   warning  'clearcanvas5' is not defined                     no-undef
+  1528:11  warning  'cancelani' is not defined                        no-undef
+  1545:10  warning  'glycinecheckbox' is defined but never used       no-unused-vars
+  1547:3   warning  '$' is not defined                                no-undef
+  1548:3   warning  '$' is not defined                                no-undef
+  1582:9   warning  'cancelani' is not defined                        no-undef
+  1621:9   warning  'cancelani' is not defined                        no-undef
+  1625:7   warning  'clearcanvas3' is not defined                     no-undef
+  1630:21  warning  'clearcanvas3' is not defined                     no-undef
+  1753:9   warning  'cancelani' is not defined                        no-undef
+  1795:11  warning  'cancelani' is not defined                        no-undef
+  1836:11  warning  'cancelani' is not defined                        no-undef
+  1848:10  warning  'stepreg' is defined but never used               no-unused-vars
+  1856:10  warning  'stepdata' is defined but never used              no-unused-vars
+  1865:10  warning  'dataan1' is defined but never used               no-unused-vars
+  1868:10  warning  'dataan2' is defined but never used               no-unused-vars
+
+/home/runner/work/exp-protein-ligand-spr-iitkgp/exp-protein-ligand-spr-iitkgp/experiment/simulation/js/plotgraph.js
+  14:2   warning  '$' is not defined         no-undef
+  15:2   warning  '$' is not defined         no-undef
+  26:21  warning  'XLSX' is not defined      no-undef
+  33:21  warning  'XLSX' is not defined      no-undef
+  65:20  warning  'CanvasJS' is not defined  no-undef
+  93:4   warning  Mixed spaces and tabs      no-mixed-spaces-and-tabs
+
+/home/runner/work/exp-protein-ligand-spr-iitkgp/exp-protein-ligand-spr-iitkgp/experiment/simulation/js/plotgraph_a.js
+  13:2   warning  '$' is not defined         no-undef
+  14:2   warning  '$' is not defined         no-undef
+  25:21  warning  'XLSX' is not defined      no-undef
+  32:21  warning  'XLSX' is not defined      no-undef
+  37:3   warning  Mixed spaces and tabs      no-mixed-spaces-and-tabs
+  42:3   warning  Mixed spaces and tabs      no-mixed-spaces-and-tabs
+  43:3   warning  Mixed spaces and tabs      no-mixed-spaces-and-tabs
+  59:20  warning  'CanvasJS' is not defined  no-undef
+  70:2   warning  Mixed spaces and tabs      no-mixed-spaces-and-tabs
+  96:4   warning  Mixed spaces and tabs      no-mixed-spaces-and-tabs
+
+✖ 147 problems (0 errors, 147 warnings)
+
